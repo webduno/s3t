@@ -53,15 +53,15 @@ export default async function Page() {
             
 
 
-            <h1 className='tx-bold'>Layer 1: Owned Data </h1> <br className='mb-8 ' />
+            <h1 className='tx-bold'>Layer 1: Proprietary Data </h1> <br className='mb-8 ' />
 
 
 
             <details>
-              <summary className='opaci-chov--75 flex'>
+              <summary className='opaci-chov--25 flex'>
                 <div className='flex gap-2 pb-2'>
                   <div className='pa-2 bord-r-50' style={{ background: "#0099FF" }}></div>
-                  <h2 className='tx-bold-3'>1.1 Handwritten by Developer </h2>
+                  <h2 className='tx-bold-'><div>1.1</div> <div className='tx-bold-3'>Handwritten by Developer </div></h2>
                 </div>
               </summary>
               <div>
@@ -81,10 +81,10 @@ export default async function Page() {
 
 
             <details>
-              <summary className='opaci-chov--75 flex'>
+              <summary className='opaci-chov--25 flex'>
                 <div className='flex gap-2 pb-2'>
                   <div className='pa-2 bord-r-50' style={{ background: "#2099DF" }}></div>
-                  <h2 className='tx-bold-3'>1.2 File-based Database </h2>
+                  <h2 className='tx-bold-'><div>1.2</div> <div className='tx-bold-3'>File-based Database </div></h2>
                 </div>
               </summary>
               <div>
@@ -103,11 +103,11 @@ export default async function Page() {
 
 
             <details>
-              <summary className='opaci-chov--75 flex'>
+              <summary className='opaci-chov--25 flex'>
 
                 <div className='flex gap-2 pb-2'>
                   <div className='pa-2 bord-r-50' style={{ background: "#4199BE" }}></div>
-                  <h2 className='tx-bold-3'>1.3 Database Schema Connection </h2>
+                  <h2 className='tx-bold-'><div>1.3</div> <div className='tx-bold-3'>Database Schema Connection </div></h2>
                 </div>
               </summary>
               <div>
@@ -133,11 +133,11 @@ export default async function Page() {
 
             <h1 className='tx-bold'>Layer 2: Fetched Data </h1> <br className='mb-8 ' />
             <details>
-              <summary className='opaci-chov--75 flex'>
+              <summary className='opaci-chov--25 flex'>
 
                 <div className='flex gap-2 pb-2'>
                   <div className='pa-2 bord-r-50' style={{ background: "#70998F" }}></div>
-                  <h2 className='tx-bold-3'>2.1 Stored in Cache </h2>
+                  <h2 className='tx-bold-'><div>2.1</div> <div className='tx-bold-3'>Stored in Cache </div></h2>
                 </div>
               </summary>
               <div>
@@ -161,11 +161,11 @@ export default async function Page() {
 
 
             <details>
-              <summary className='opaci-chov--75 flex'>
+              <summary className='opaci-chov--25 flex'>
 
                 <div className='flex gap-2 pb-2'>
                   <div className='pa-2 bord-r-50' style={{ background: "#70998F" }}></div>
-                  <h2 className='tx-bold-3'>2.2 Fetched from 3rd Party Endpoint </h2>
+                  <h2 className='tx-bold-'><div>2.2</div> <div className='tx-bold-3'>Fetched from 3rd Party Endpoint </div></h2>
                 </div>
               </summary>
               <div>
@@ -186,10 +186,10 @@ export default async function Page() {
 
 
             <details>
-              <summary className='opaci-chov--75 flex'>
+              <summary className='opaci-chov--25 flex'>
                 <div className='flex gap-2 pb-2'>
                   <div className='pa-2 bord-r-50' style={{ background: "#A3995C" }}></div>
-                  <h2 className='tx-bold-3'>2.3 Saved in Browser </h2>
+                  <h2 className='tx-bold-'><div>2.3</div> <div className='tx-bold-3'>Saved in Browser </div></h2>
                 </div>
               </summary>
               <div>
@@ -213,10 +213,10 @@ export default async function Page() {
 
 
             <details>
-              <summary className='opaci-chov--75 flex'>
+              <summary className='opaci-chov--25 flex'>
                 <div className='flex gap-2 pb-2'>
                   <div className='pa-2 bord-r-50' style={{ background: "#B79948" }}></div>
-                  <h2 className='tx-bold-3'>3.1. Authorized Local Endpoint </h2>
+                  <h2 className='tx-bold-'><div>3.1</div> <div className='tx-bold-3'>Authorized Local Endpoint </div></h2>
                 </div>
               </summary>
               <div>
@@ -235,10 +235,10 @@ export default async function Page() {
 
 
             <details>
-              <summary className='opaci-chov--75 flex'>
+              <summary className='opaci-chov--25 flex'>
                 <div className='flex gap-2 pb-2'>
                   <div className='pa-2 bord-r-50' style={{ background: "#D4992B" }}></div>
-                  <h2 className='tx-bold-3'>3.2. 3rd Party Endpoint Data </h2>
+                  <h2 className='tx-bold-'><div>3.2</div> <div className='tx-bold-3'>3rd Party Endpoint Data </div></h2>
                 </div>
               </summary>
               <div>
@@ -253,11 +253,11 @@ export default async function Page() {
             </details>
 
             <details>
-              <summary className='opaci-chov--75 flex'>
+              <summary className='opaci-chov--25 flex'>
                 
                 <div className='flex gap-2 pb-2'>
                   <div className='pa-2 bord-r-50' style={{ background: "#FE9900" }}></div>
-                  <h2 className='tx-bold-3'>3.3. Saved in Browser </h2>
+                  <h2 className='tx-bold-'><div>3.3</div> <div className='tx-bold-3'>Saved in Browser </div></h2>
                 </div>
               </summary>
               <div>

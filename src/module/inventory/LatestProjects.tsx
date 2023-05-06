@@ -10,9 +10,7 @@ function Component ({initArray}:any) {
   const buttonActionText = "..."
   const buttonActionClass = "tx-lg pb-3 pt-1 px-2 tx-gray opaci-chov--25"
   const actionCard = (id:any) => {
-    const foundIndex = useMemo(()=>{
-        return initArray.findIndex((item:any)=>(item.id == id))+1
-    },[initArray])
+    const foundIndex =  initArray.findIndex((item:any)=>(item.id == id))+1
 
         return (<>
           <Dropdown buttonTitle={buttonActionText} buttonClass={buttonActionClass}>

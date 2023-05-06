@@ -44,7 +44,7 @@ export default async function Page() {
           <SidebarFill />
           <div className='flex-1 flex-col  flex-align-star flex-align-stretch px-8 Q_xs_px-2 pt- '>
                 {/* <UserSettings /> */}
-                <QueryCrud />
+                {/* <QueryCrud theKey='' /> */}
 
 
               

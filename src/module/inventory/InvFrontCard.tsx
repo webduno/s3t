@@ -10,8 +10,8 @@ function Component ({}) {
           </h1>
           {/* <h2 className='pt-3 tx-bold-3'> Abraham Duno</h2>
           <h4 className='pb-3 tx-bold-3'> May 6th 2023</h4> */}
-          <div className='flex-wrap gap-1 flex-justify-start tx-smd opaci-50'>
-            <div className="w-60 pt-8 pb-4"> Comprehensive software solution that enables efficient tracking and advanced 3D web features </div>
+          <div className='flex-wrap gap-1 flex-justify-start tx-smd opaci-50 px-4'>
+            <div className="w- pt-8 pb-4"> Comprehensive software solution that enables efficient tracking and advanced 3D web features </div>
           </div>
           <div className='flex-wrap gap-1 flex-justify-start tx-smd opaci-50'>
             <div className="w-max-200px py-2"> Developed by </div>

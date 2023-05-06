@@ -23,6 +23,7 @@ import ApiFetchedFromServerCached from '@/module/landing/ApiFetchedFromServerCac
 import ContextConnectedTable from './ContextConnectedTable';
 import { getSupabaseClient } from '../../../script/state/repository/supabaseClient';
 import { fetchDemoList } from '../../../script/state/repository/demo';
+import LatestProjects from './LatestProjects';
 
 export default async function Page() {
   const supabaseC = getSupabaseClient()
@@ -84,8 +85,8 @@ export default async function Page() {
                 <h6 className='tx-md tx-bold-2'> this is mutable data via endpoint request </h6> */}
                 <hr className='mb-4' />
                 <div>
-                  {/* @ts-expect-error */}
-                  <ContextConnectedTable initArray={theLatestArray} />
+                  <LatestProjects initArray={theLatestArray} />
+                  
                 </div>
 
 

@@ -80,6 +80,7 @@ export const fetchUnits = async (config: RequestInit = {}): Promise<Unit[]> => {
     return data.Units
   } catch (error: any) {
     console.error(error)
+    return []
     throw new Error(`Failed to fetch units. Error: ${error.message}`)
   }
 }

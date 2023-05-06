@@ -53,7 +53,7 @@ export default async function Page() {
             
 
 
-            <h1 className='tx-bold'>Abraham Duno's Projects </h1> <br className='mb-8 ' />
+            <h1 className='tx-bold'>Abraham Duno&apos;s Projects </h1> <br className='mb-8 ' />
 
 
 

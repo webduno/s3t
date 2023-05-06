@@ -186,7 +186,7 @@ export default async function Page() {
 
                 <div className='flex gap-2 pb-2'>
                   <div className='pa-2 bord-r-50' style={{ background: "#ff00ff" }}></div>
-                  <h2 className='tx-bold-'><div>Tools, Languages, ...</div> <div className='tx-bold-3'>Technologies used </div></h2>
+                  <h2 className='tx-bold-'><div>Technologies</div> <div className='tx-bold-3'>Tools, Languages, ... </div></h2>
                 </div>
               </summary>
               <div>

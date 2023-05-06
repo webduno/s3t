@@ -20,7 +20,12 @@ function Component ({}) {
           </div>
           <div className='flex-wrap gap-1 flex-justify-start tx-smd opaci-50'>
             <div className="w-max-200px py-2"> Github Repo: </div>
-            <a className="tx-bold opaci-chov--50" style={{color:"#ff9900"}} href="https://github.com/3dunoabraham/s3t" target="_blank">Abraham Duno</a>
+            <a className="tx-bold opaci-chov--50" style={{color:"#0066aa"}} href="https://github.com/3dunoabraham/s3t" target="_blank">IMSFront</a>
+            {/* <div> websites display up-to-date data? </div> */}
+          </div>
+          <div className='flex-wrap gap-1 flex-justify-start tx-smd opaci-50'>
+            <div className="w-max-200px py-2"> Sync Demo: </div>
+            <a className="tx-bold opaci-chov--50" style={{color:"#0066aa"}} href="/sss" target="_blank">How is data Synced?</a>
             {/* <div> websites display up-to-date data? </div> */}
           </div>
           {/* <div className='flex-wrap gap-1 flex-justify-start pt-3 tx-mdl  '>

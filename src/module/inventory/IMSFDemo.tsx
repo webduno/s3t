@@ -20,10 +20,23 @@ import LiveTable from '@/module/landing/LiveTable';
 import LocalStorageTable from '@/module/landing/LocalStorageTable';
 import Fetch3rdParty from '@/module/landing/Fetch3rdParty';
 import ApiFetchedFromServerCached from '@/module/landing/ApiFetchedFromServerCached';
+import ContextConnectedTable from './ContextConnectedTable';
+import { getSupabaseClient } from '../../../script/state/repository/supabaseClient';
+import { fetchDemoList } from '../../../script/state/repository/demo';
 
 export default async function Page() {
+  const supabaseC = getSupabaseClient()
+  const theArray:any = await fetchDemoList(supabaseC)
+  const theCodeArray:any = theArray.filter((x:any)=>(x.category == "code"))
+  const theArtArray:any = theArray.filter((x:any)=>(x.category == "art"))
+  const theGameArray:any = theArray.filter((x:any)=>(x.category == "game"))
 
-  const theArray = await fetchUnits({ cache: "no-store" })
+  const theLatestArray:any = theArray.filter((x:any)=>(!!x.vip))
+  const theStandardsArray:any = theArray.filter((x:any)=>(!!x.techstack))
+
+  // console.log("theArray", theArray)
+
+  // const theArray = await fetchUnits({ cache: "no-store" })
   const session: any = await fetchSession()
 
   const personal_token = process.env.GITHUB_PERSONAL_TOKEN
@@ -65,12 +78,14 @@ export default async function Page() {
                 </div>
               </summary>
               <div>
-                <h6 style={{ color: "#0099FF" }}> available from server </h6>
-                <h6 className='tx-md tx-bold-2'> doesn&apos;t need to be imported, queried, fetched or retrieved </h6>
-                <h6 className='tx-md tx-bold-2'> this is manually mutable data </h6>
+                {/* <h6 style={{ color: "#0099FF" }}> available from server </h6> */}
+                {/* <h6 className='tx-md tx-bold-2'> Database Schema Connection </h6> */}
+                {/* <h6 className='tx-md tx-bold-2'> this is manually mutable data </h6> */}
                 <hr className='mb-4' />
                 <div className='flex-col flex-align-stretch'>
-                  <HardcodedHtmlTable />
+                  {/* @ts-expect-error */}
+                  <ContextConnectedTable initArray={theCodeArray} />
+                  {/* <HardcodedHtmlTable /> */}
                 </div>
                 <br className='my-8 ' />
               </div>
@@ -89,11 +104,12 @@ export default async function Page() {
               </summary>
               <div>
 
-                <h6 style={{ color: "#70998F" }}> available from server </h6>
+                {/* <h6 style={{ color: "#70998F" }}> available from server </h6>
                 <h6 className='tx-md tx-bold-2'> imported from file (.env, json, csv, ...) </h6>
-                <h6 className='tx-md tx-bold-2'> this is mutable data via server code </h6>
+                <h6 className='tx-md tx-bold-2'> this is mutable data via server code </h6> */}
                 <hr className='mb-4' />
-                <HardcodedJsonTable theJson={REPOS_JSON} />
+                  {/* @ts-expect-error */}
+                  <ContextConnectedTable initArray={theArtArray} />
 
                 <br className='my-8 ' />
 
@@ -111,13 +127,13 @@ export default async function Page() {
                 </div>
               </summary>
               <div>
-
+{/* 
                 <h6 style={{ color: "#ff9900" }}> available from server </h6>
                 <h6 className='tx-md tx-bold-2'> queried from connected database </h6>
-                <h6 className='tx-md tx-bold-2'> this is mutable data via queries </h6>
+                <h6 className='tx-md tx-bold-2'> this is mutable data via queries </h6> */}
                 <hr className='mb-4' />
-                {/* @ts-expect-error */}
-                <DatabaseConnectedTable />
+                  {/* @ts-expect-error */}
+                  <ContextConnectedTable initArray={theGameArray} />
 
 
                 <br className='my-8 ' />
@@ -142,13 +158,13 @@ export default async function Page() {
               </summary>
               <div>
 
-                <h6 style={{ color: "#4199BE" }}> available from server </h6>
+                {/* <h6 style={{ color: "#4199BE" }}> available from server </h6>
                 <h6 className='tx-md tx-bold-2'> fetched from 3rd party server, cached on re-enter </h6>
-                <h6 className='tx-md tx-bold-2'> this is mutable data via endpoint request </h6>
+                <h6 className='tx-md tx-bold-2'> this is mutable data via endpoint request </h6> */}
                 <hr className='mb-4' />
                 <div>
                   {/* @ts-expect-error */}
-                  <ApiFetchedFromServerCached />
+                  <ContextConnectedTable initArray={theLatestArray} />
                 </div>
 
 
@@ -170,13 +186,13 @@ export default async function Page() {
               </summary>
               <div>
 
-                <h6 style={{ color: "#70998F" }}> available from server </h6>
+                {/* <h6 style={{ color: "#70998F" }}> available from server </h6>
                 <h6 className='tx-md tx-bold-2'> fetched from 3rd party server, always updated on re-enter </h6>
-                <h6 className='tx-md tx-bold-2'> this is mutable data via endpoint request </h6>
+                <h6 className='tx-md tx-bold-2'> this is mutable data via endpoint request </h6> */}
                 <hr className='mb-4' />
               <div>
                 {/* @ts-expect-error */}
-                <ApiFetchedFromServer />
+                  <ContextConnectedTable initArray={theStandardsArray} />
               </div>
 
               <br className='my-8 ' />

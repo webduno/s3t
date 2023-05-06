@@ -3,29 +3,28 @@ function Component ({}) {
     return (
         <>
         <h1 className=''>
-            <div> 📦 IMSFront  </div>
-            <div className="tx-sm"> Inventory Management System </div>
+            <div> Portfolio  </div>
+            <div className="tx-sm"> Abraham Duno's Projects Archive </div>
             {/* <div> Management </div> */}
             {/* <div> System </div> */}
           </h1>
           {/* <h2 className='pt-3 tx-bold-3'> Abraham Duno</h2>
           <h4 className='pb-3 tx-bold-3'> May 6th 2023</h4> */}
-          <div className='flex-wrap gap-1 flex-justify-start tx-smd opaci-50 px-4'>
-            <div className="w- pt-8 pb-4"> Comprehensive software solution that enables efficient tracking and advanced 3D web features </div>
+          <div className='flex-wrap gap-1 flex-justify-start tx-smd opaci-50 px-6'>
+            <div className="w- pt-8 pb-4"> General Artist & Software Developer with 6+ years of experience in full stack software development and 3d modeling & sculpting.  </div>
           </div>
-          <div className='flex-wrap gap-1 flex-justify-start tx-smd opaci-50'>
+          {/* <div className='flex-wrap gap-1 flex-justify-start tx-smd opaci-50'>
             <div className="w-max-200px py-2"> Developed by </div>
             <a className="tx-bold opaci-chov--50" style={{color:"#ff9900"}} href="https://github.com/3dunoabraham" target="_blank">Abraham Duno</a>
+          </div> */}
+          <div className='flex-wrap gap-1 flex-justify-start tx-smd opaci-50'>
+            <div className="w-max-200px py-2"> Github: </div>
+            <a className="tx-bold opaci-chov--50" style={{color:"#ff9900"}} href="https://github.com/3dunoabraham" target="_blank">@3dunoabraham</a>
             {/* <div> websites display up-to-date data? </div> */}
           </div>
           <div className='flex-wrap gap-1 flex-justify-start tx-smd opaci-50'>
-            <div className="w-max-200px py-2"> Github Repo: </div>
-            <a className="tx-bold opaci-chov--50" style={{color:"#0066aa"}} href="https://github.com/3dunoabraham/s3t" target="_blank">IMSFront</a>
-            {/* <div> websites display up-to-date data? </div> */}
-          </div>
-          <div className='flex-wrap gap-1 flex-justify-start tx-smd opaci-50'>
-            <div className="w-max-200px py-2"> Sync Demo: </div>
-            <a className="tx-bold opaci-chov--50" style={{color:"#0066aa"}} href="/sss" target="_blank">How is data Synced?</a>
+            <div className="w-max-200px py-2"> Twitter: </div>
+            <a className="tx-bold opaci-chov--50" style={{color:"#0066aa"}} href="https://twitter.com/tresduno" target="_blank">@tresduno</a>
             {/* <div> websites display up-to-date data? </div> */}
           </div>
           {/* <div className='flex-wrap gap-1 flex-justify-start pt-3 tx-mdl  '>

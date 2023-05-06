@@ -5,8 +5,8 @@ import { fetchSession } from '../../script/state/repository/session'
 import AppClientProvider from "@/dom/organ/layout/AppClientProvider"
 
 export const metadata = {
-  title: 'IMSFront',
-  description: 'Inventory Management System',
+  title: 'Abraham Duno',
+  description: 'Abraham Duno Portfolio',
 }
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {

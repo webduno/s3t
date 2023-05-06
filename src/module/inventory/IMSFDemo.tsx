@@ -70,7 +70,7 @@ export default async function Page() {
             <h1 className='tx-bold'>Abraham Duno </h1> <br className='mb-8 ' />
 
 
-            <details>
+            <details open>
               <summary className='opaci-chov--25 flex'>
 
                 <div className='flex gap-2 pb-2'>

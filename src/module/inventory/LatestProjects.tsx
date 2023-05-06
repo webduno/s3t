@@ -44,7 +44,7 @@ function Component ({initArray}:any) {
         {/* @ ts-expect-error */}
         {/* <ContextConnectedTable initArray={initArray} /> */}
         
-        <FlexTable theArray={initArray} bools={["isActionable",/* "isRowSelectable" */]} actionCard={actionCard} 
+        <FlexTable theArray={initArray} bools={["isActionable", "isIdless" ]} actionCard={actionCard} 
         actionHeader={<div className={buttonActionClass}>{buttonActionText}</div>}
                 config={{idKey:"id",mainKey:"id",
                     headerClass:"tx-sm tx-gray tx-bold-3 ",

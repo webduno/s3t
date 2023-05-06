@@ -8,11 +8,13 @@ function Component({ theArray, bools, config, actionCard, actionHeader, calls }:
       >
         {!bools?.includes("isHeadless") &&
           <div className="h-100 w-100 flex">
-            <div className=' z-10 flex-1 w-30 flex-col flex-align-start block px-2  flex-1'>
-              {config?.idKeyTitle || "id"}
-            </div>
+            {!bools?.includes("isIdless") &&
+              <div className=' z-10 flex-1 w-30 flex-col flex-align-start block px-2  flex-1'>
+                {config?.idKeyTitle || "id"}
+              </div>
+            }
 
-            <div className="flex w-70 ">
+            <div className={`flex  w-${!bools?.includes("isIdless") ? "70" : "100"} `}>
               {config?.childrenArray && config?.childrenArray.map((aChildren: any, index: number) => {
                 return (
                   <div key={index} className={` flex-col flex-align-start  px-2  w-25  ${aChildren.class}`}>
@@ -56,32 +58,35 @@ function Component({ theArray, bools, config, actionCard, actionHeader, calls }:
               }
             </div>
           }
+            {!bools?.includes("isIdless") && <>
           <div className='  flex-1 px-2 pos-rel pt-2 w-30'>
-            {!!anObj[config?.mainKey] && <>
-              {anObj[config?.mainKey]}
-            </>}
-            {!anObj[config?.mainKey] && !bools?.includes("isDetailed") && <>
-              -
-            </>}
-            {!anObj[config?.mainKey] && bools?.includes("isDetailed") && <>
-              <details>
-                <summary className='opaci-chov--50 opaci-75  tx-italic'>{config?.mainAltText}</summary>
-                <div className="flex-col pa-2   ">
-                  {config?.detailsArray && config?.detailsArray.map((aDetail: any, index: number) => {
-                    return (
-                      <div key={index} className="w-100">
-                        <div className={`   ${aDetail.class}`}>
-                          <span className="tx-sm">{aDetail.key}</span>:
-                          <div>{anObj[aDetail.key]}</div>
+
+              {!!anObj[config?.mainKey] && <>
+                {anObj[config?.mainKey]}
+              </>}
+              {!anObj[config?.mainKey] && !bools?.includes("isDetailed") && <>
+                -
+              </>}
+              {!anObj[config?.mainKey] && bools?.includes("isDetailed") && <>
+                <details>
+                  <summary className='opaci-chov--50 opaci-75  tx-italic'>{config?.mainAltText}</summary>
+                  <div className="flex-col pa-2   ">
+                    {config?.detailsArray && config?.detailsArray.map((aDetail: any, index: number) => {
+                      return (
+                        <div key={index} className="w-100">
+                          <div className={`   ${aDetail.class}`}>
+                            <span className="tx-sm">{aDetail.key}</span>:
+                            <div>{anObj[aDetail.key]}</div>
+                          </div>
                         </div>
-                      </div>
-                    )
-                  })}
-                </div>
-              </details>
-            </>}
+                      )
+                    })}
+                  </div>
+                </details>
+              </>}
           </div>
-          <div className="flex w-70  ">
+          </>}
+          <div className={`flex w-${!bools?.includes("isIdless") ? "70" : "100"}  `}>
             {config?.childrenArray && config?.childrenArray.map((aChildren: any, index: number) => {
               if (!aChildren.widget) {
                 return (

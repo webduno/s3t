@@ -221,10 +221,10 @@ export default async function Page() {
             </div>
           </div>
       </div>
-      <div className='flex w-100 pb-8'>
+      {/* <div className='flex w-100 pb-8'>
         <SidebarFill />
         <StandardFooter />
-      </div>
+      </div> */}
     </main>
   </>)
 }

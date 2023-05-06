@@ -18,11 +18,13 @@ function Component ({ foundUser, children }:{ foundUser:any, children?:any }) {
   return (<>
     <Wrapper>
       <a href="/" className='py-4 flex-center '>
-        <div className='bg-white px-1 pt-1 bord-r-10 scale-90'>
-          <Image src='/icons/logo.svg' alt='next' width='28' height='28'/>
+        <div className='bg-w-10 px-1 py-1 bord-r-10 scale-90'>
+          <div className='tx-bold tx-lgx'>IMS</div>
+          {/* <Image src='/icons/logo.svg' alt='next' width='28' height='28'/> */}
         </div>
         <div className='Q_lg_x pl-1'>
-          <Image src='/icons/Vector.png' alt='next' width='129' height='19'/>
+          <div className='tx-bold-3 tx-lg'>Front</div>
+          {/* <Image src='/icons/Vector.png' alt='next' width='129' height='19'/> */}
         </div>
       </a>
       <div className='flex-1 w-100  autoverflow '

@@ -5,7 +5,7 @@ import { fetchSession } from '../../script/state/repository/session'
 import AppClientProvider from "@/dom/organ/layout/AppClientProvider"
 
 export const metadata = {
-  title: 'IMS',
+  title: 'IMSFront',
   description: 'Inventory Management System',
 }
 

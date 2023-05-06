@@ -14,7 +14,7 @@ const Component = forwardRef(( {buttonTitle, buttonClass = "ims-button-primary",
 
     return (
     <div className='pos-rel' ref={$itemDom}>
-        <button className={buttonClass} onClick={()=>{ s__isOpen(true) }}>
+        <button className={buttonClass} onClick={()=>{ s__isOpen(!isOpen) }}>
             {buttonTitle}
         </button>
         {isOpen && 

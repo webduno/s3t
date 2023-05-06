@@ -60,7 +60,7 @@ export default async function Page() {
         <div className='  Q_xs_lg'>
             
             <InvFrontCard />
-            <br className='my-4' />
+            <br className='my-8' />
           </div>
           {/* demo */}
                 {/* @ts-expect-error */}

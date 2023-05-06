@@ -66,8 +66,36 @@ export default async function Page() {
             
 
 
-            <h1 className='tx-bold'>Abraham Duno&apos;s Projects </h1> <br className='mb-8 ' />
+            <h1 className='tx-bold'>Abraham Duno </h1> <br className='mb-8 ' />
 
+
+            <details>
+              <summary className='opaci-chov--25 flex'>
+
+                <div className='flex gap-2 pb-2'>
+                  <div className='pa-2 bord-r-50' style={{ background: "#ffff00" }}></div>
+                  <h2 className='tx-bold-'><div>Latest</div> <div className='tx-bold-3'>Current Projects  </div></h2>
+                </div>
+              </summary>
+              <div>
+
+                {/* <h6 style={{ color: "#4199BE" }}> available from server </h6>
+                <h6 className='tx-md tx-bold-2'> fetched from 3rd party server, cached on re-enter </h6>
+                <h6 className='tx-md tx-bold-2'> this is mutable data via endpoint request </h6> */}
+                <hr className='mb-4' />
+                <div>
+                  {/* @ts-expect-error */}
+                  <ContextConnectedTable initArray={theLatestArray} />
+                </div>
+
+
+
+                <br className='my-8 ' />
+
+              </div>
+            </details>
+
+            <hr className='my-8 ' />
 
 
             <details>
@@ -91,6 +119,7 @@ export default async function Page() {
               </div>
             </details>
 
+            <br className='my-2 ' />
 
 
 
@@ -116,6 +145,7 @@ export default async function Page() {
               </div>
             </details>
 
+            <br className='my-2 ' />
 
 
             <details>
@@ -147,32 +177,7 @@ export default async function Page() {
 
 
 
-            <h1 className=' tx-bold-3'>Portfolio Statistics </h1> <br className='mb-8 ' />
-            <details>
-              <summary className='opaci-chov--25 flex'>
-
-                <div className='flex gap-2 pb-2'>
-                  <div className='pa-2 bord-r-50' style={{ background: "#ffff00" }}></div>
-                  <h2 className='tx-bold-'><div>Latest</div> <div className='tx-bold-3'>Current Projects  </div></h2>
-                </div>
-              </summary>
-              <div>
-
-                {/* <h6 style={{ color: "#4199BE" }}> available from server </h6>
-                <h6 className='tx-md tx-bold-2'> fetched from 3rd party server, cached on re-enter </h6>
-                <h6 className='tx-md tx-bold-2'> this is mutable data via endpoint request </h6> */}
-                <hr className='mb-4' />
-                <div>
-                  {/* @ts-expect-error */}
-                  <ContextConnectedTable initArray={theLatestArray} />
-                </div>
-
-
-
-                <br className='my-8 ' />
-
-              </div>
-            </details>
+            <h1 className=' tx-bold-3'>TechStack </h1> <br className='mb-8 ' />
 
 
 
@@ -181,7 +186,7 @@ export default async function Page() {
 
                 <div className='flex gap-2 pb-2'>
                   <div className='pa-2 bord-r-50' style={{ background: "#ff00ff" }}></div>
-                  <h2 className='tx-bold-'><div>Docs</div> <div className='tx-bold-3'>Standards and Principles </div></h2>
+                  <h2 className='tx-bold-'><div>Tools, Languages, ...</div> <div className='tx-bold-3'>Technologies used </div></h2>
                 </div>
               </summary>
               <div>

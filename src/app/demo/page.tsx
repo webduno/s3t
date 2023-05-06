@@ -84,7 +84,7 @@ export default async function Page() {
                   <h2 className='tx-bold-3'>1.1 Handwritten by Developer </h2>
                 </div>
                 <h6 style={{color:"#0099FF"}}> available from server </h6>
-                <h6> doesn't need to be imported, queried, fetched or retrieved </h6>
+                <h6> doesn&apos;t need to be imported, queried, fetched or retrieved </h6>
                 <h6> this is manually mutable data </h6>
                 <hr  className='mb-4' />
                 <div className='flex-col flex-align-stretch'>
@@ -163,7 +163,7 @@ export default async function Page() {
                   <h2 className='tx-bold-3'>2.3 Saved in Browser </h2>
                 </div>
                 <h6 style={{color:"#A3995C"}}> available from client </h6>
-                <h6> retrieved from browser's local storage </h6>
+                <h6> retrieved from browser&apos;s local storage </h6>
                 <h6 className='tx-red-50'> this is mutable data by the user </h6>
                 <h6 className='tx-green'> defaults to data available from server </h6>
                 <hr  className='mb-4' />

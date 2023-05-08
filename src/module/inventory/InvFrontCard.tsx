@@ -21,17 +21,21 @@ function Component ({}) {
           </div> */}
           <div className='flex-wrap gap-1 flex-justify-start tx-smd opaci-50'>
             <div className="w-max-200px py-2"> Github: </div>
-            <a className="tx-bold opaci-chov--50" style={{color:"#ff9900"}} href="https://github.com/3dunoabraham" target="_blank">@3dunoabraham</a>
+            <a className="tx-bold opaci-chov--50" style={{color:"#333333"}} href="https://github.com/3dunoabraham" target="_blank">@3dunoabraham</a>
+            {/* <div> websites display up-to-date data? </div> */}
+          </div>
+          <div className='flex-wrap gap-1 flex-justify-start tx-smd opaci-50'>
+            <div className="w-max-200px py-2"> Blog: </div>
+            <a className="tx-bold opaci-chov--50" style={{color:"#00aa00"}} href="https://abrahamduno.vercel.app" target="_blank">Abraham Duno</a>
+          </div>
+          <div className='flex-wrap gap-1 flex-justify-start tx-smd opaci-50'>
+            <div className="w-max-200px py-2"> Artstation: </div>
+            <a className="tx-bold opaci-chov--50" style={{color:"#ff9900"}} href="https://twitter.com/tresduno" target="_blank">@tresduno</a>
             {/* <div> websites display up-to-date data? </div> */}
           </div>
           <div className='flex-wrap gap-1 flex-justify-start tx-smd opaci-50'>
             <div className="w-max-200px py-2"> Twitter: </div>
             <a className="tx-bold opaci-chov--50" style={{color:"#0066aa"}} href="https://twitter.com/tresduno" target="_blank">@tresduno</a>
-            {/* <div> websites display up-to-date data? </div> */}
-          </div>
-          <div className='flex-wrap gap-1 flex-justify-start tx-smd opaci-50'>
-            <div className="w-max-200px py-2"> Blog (dev.to): </div>
-            <a className="tx-bold opaci-chov--50" style={{color:"#0066aa"}} href="https://dev.to/3dunoabraham" target="_blank">@tresduno</a>
             {/* <div> websites display up-to-date data? </div> */}
           </div>
           {/* <div className='flex-wrap gap-1 flex-justify-start pt-3 tx-mdl  '>

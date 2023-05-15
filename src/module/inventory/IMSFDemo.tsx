@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { fetchSession } from '@/../script/state/repository/session';
 import { fetchUnits } from '@/../script/state/repository/inventory/unit';
 import Sidebar from '@/dom/organ/layout/Sidebar';
@@ -47,6 +48,63 @@ export default async function Page() {
 
     <main className='flex-col pos-rel  ' >
       <div className=' pos-rel w-100 '>
+        <div className='flex pos-rel flex-wrap gap-1 pa-1'>
+          <a href="https://gtabtc.vercel.app/" className='opaci-chov--50 bord-r-5 noverflow' target='_blank'>
+            <Image alt="asd"   src="/images/gtabtc.png" 
+              width="300"
+              height="200"
+            />
+          </a>
+          <a href="https://abrahamduno.vercel.app/" className='opaci-chov--50 bord-r-5 noverflow' target='_blank'>
+            <Image alt="asd"   src="/images/abrd.png" 
+              width="300"
+              height="200"
+            />
+          </a>
+          <a href="https://csscss.vercel.app/" className='opaci-chov--50 bord-r-5 noverflow' target='_blank'>
+            <Image alt="asd"   src="/images/csscss.png" 
+              width="300"
+              height="200"
+            />
+          </a>
+          <a href="https://duno.vercel.app/" className='opaci-chov--50 bord-r-5 noverflow' target='_blank'>
+            <Image alt="asd"   src="/images/duno.png" 
+              width="300"
+              height="200"
+            />
+          </a>
+          <a href="https://tresduno.vercel.app/" className='opaci-chov--50 bord-r-5 noverflow' target='_blank'>
+            <Image alt="asd"   src="/images/tresd.jpg" 
+              width="300"
+              height="200"
+            />
+          </a>
+          <a href="https://thrue-beta.vercel.app/" className='opaci-chov--50 bord-r-5 noverflow' target='_blank'>
+            <Image alt="asd"   src="/images/thrue.jpg" 
+              width="300"
+              height="200"
+            />
+          </a>
+          <a href="https://thrue-beta.vercel.app/" className='opaci-chov--50 bord-r-5 noverflow' target='_blank'>
+            <Image alt="asd"   src="/images/thr.jpg" 
+              width="300"
+              height="200"
+            />
+          </a>
+          <a href="#" className='opaci-chov--50 bord-r-5 noverflow'>
+            <Image alt="asd"   src="/images/gam.jpg" 
+              width="300"
+              height="200"
+            />
+          </a>
+          <a href="https://3dunoabraham.github.io/csscss/" className='opaci-chov--50 bord-r-5 noverflow' target='_blank'>
+            <Image alt="asd"   src="/images/github.jpg" 
+              width="300"
+              height="200"
+            />
+          </a>
+        </div>
+
         {/* <div className=' pos-fix h-100vh box-shadow-2 tx-white' style={{background: "#3E5F58"}} >
           <Sidebar foundUser={session.user} ><>
             {
@@ -67,7 +125,7 @@ export default async function Page() {
             
 
 
-            <h1 className='tx-bold'>Abraham Duno </h1> <br className='mb-8 ' />
+            <h1 className='tx-bold mt-8'>Abraham Duno </h1> <br className='mb-8 ' />
 
 
             <details open>

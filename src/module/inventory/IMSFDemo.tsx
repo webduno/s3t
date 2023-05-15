@@ -97,6 +97,12 @@ export default async function Page() {
               height="200"
             />
           </a>
+          <a href="#" className='opaci-chov--50 bord-r-5 noverflow'>
+            <Image alt="asd"   src="/images/3duno.png" 
+              width="300"
+              height="200"
+            />
+          </a>
           <a href="https://3dunoabraham.github.io/csscss/" className='opaci-chov--50 bord-r-5 noverflow' target='_blank'>
             <Image alt="asd"   src="/images/github.jpg" 
               width="300"

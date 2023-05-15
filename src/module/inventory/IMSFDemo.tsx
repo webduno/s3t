@@ -109,6 +109,18 @@ export default async function Page() {
               height="200"
             />
           </a>
+          <a href="https://sss3.vercel.app/" className='opaci-chov--50 bord-r-5 noverflow' target='_blank'>
+            <Image alt="asd"   src="/images/sss.jpg" 
+              width="300"
+              height="200"
+            />
+          </a>
+          <a href="https://ngirl.vercel.app/" className='opaci-chov--50 bord-r-5 noverflow' target='_blank'>
+            <Image alt="asd"   src="/images/ngirl.jpg" 
+              width="300"
+              height="200"
+            />
+          </a>
         </div>
 
         {/* <div className=' pos-fix h-100vh box-shadow-2 tx-white' style={{background: "#3E5F58"}} >

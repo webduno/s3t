@@ -52,73 +52,73 @@ export default async function Page() {
           <a href="https://gtabtc.vercel.app/" className='opaci-chov--50 bord-r-5 noverflow' target='_blank'>
             <Image alt="asd"   src="/images/gtabtc.png" 
               width="300"
-              height="200"
-            />
-          </a>
-          <a href="https://abrahamduno.vercel.app/" className='opaci-chov--50 bord-r-5 noverflow' target='_blank'>
-            <Image alt="asd"   src="/images/abrd.png" 
-              width="300"
-              height="200"
+              height="200" className='block'
             />
           </a>
           <a href="https://csscss.vercel.app/" className='opaci-chov--50 bord-r-5 noverflow' target='_blank'>
-            <Image alt="asd"   src="/images/csscss.png" 
+            <Image alt="asd"   src="/images/csscss0.png" 
               width="300"
-              height="200"
-            />
-          </a>
-          <a href="https://duno.vercel.app/" className='opaci-chov--50 bord-r-5 noverflow' target='_blank'>
-            <Image alt="asd"   src="/images/duno.png" 
-              width="300"
-              height="200"
+              height="200" className='block'
             />
           </a>
           <a href="https://tresduno.vercel.app/" className='opaci-chov--50 bord-r-5 noverflow' target='_blank'>
             <Image alt="asd"   src="/images/tresd.jpg" 
               width="300"
-              height="200"
+              height="200" className='block'
             />
           </a>
           <a href="https://thrue-beta.vercel.app/" className='opaci-chov--50 bord-r-5 noverflow' target='_blank'>
             <Image alt="asd"   src="/images/thrue.jpg" 
               width="300"
-              height="200"
+              height="200" className='block'
             />
           </a>
           <a href="https://thrue-beta.vercel.app/" className='opaci-chov--50 bord-r-5 noverflow' target='_blank'>
             <Image alt="asd"   src="/images/thr.jpg" 
               width="300"
-              height="200"
+              height="200" className='block'
             />
           </a>
           <a href="#" className='opaci-chov--50 bord-r-5 noverflow'>
             <Image alt="asd"   src="/images/gam.jpg" 
               width="300"
-              height="200"
+              height="200" className='block'
             />
           </a>
           <a href="#" className='opaci-chov--50 bord-r-5 noverflow'>
             <Image alt="asd"   src="/images/3duno.png" 
               width="300"
-              height="200"
+              height="200" className='block'
             />
           </a>
           <a href="https://3dunoabraham.github.io/csscss/" className='opaci-chov--50 bord-r-5 noverflow' target='_blank'>
             <Image alt="asd"   src="/images/github.jpg" 
               width="300"
-              height="200"
+              height="200" className='block'
+            />
+          </a>
+          <a href="https://duno.vercel.app/" className='opaci-chov--50 bord-r-5 noverflow' target='_blank'>
+            <Image alt="asd"   src="/images/duno.png" 
+              width="300"
+              height="200" className='block'
             />
           </a>
           <a href="https://sss3.vercel.app/" className='opaci-chov--50 bord-r-5 noverflow' target='_blank'>
             <Image alt="asd"   src="/images/sss.jpg" 
               width="300"
-              height="200"
+              height="200" className='block'
             />
           </a>
           <a href="https://ngirl.vercel.app/" className='opaci-chov--50 bord-r-5 noverflow' target='_blank'>
             <Image alt="asd"   src="/images/ngirl.jpg" 
               width="300"
-              height="200"
+              height="200" className='block'
+            />
+          </a>
+          <a href="https://abrahamduno.vercel.app/" className='opaci-chov--50 bord-r-5 noverflow' target='_blank'>
+            <Image alt="asd"   src="/images/abrd.png" 
+              width="300"
+              height="200" className='block'
             />
           </a>
         </div>

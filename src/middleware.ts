@@ -20,6 +20,7 @@ function goHomeClearCookie(req:any) {
 }
 
 export async function middleware(req: NextRequest, context: GetServerSidePropsContext) {
+  return goHomeClearCookie(req)
   let sessiontoken = req.cookies.get(JWTNAME)?.value;
   if (!sessiontoken) { return goHome(req) }
   

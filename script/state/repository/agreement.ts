@@ -3,6 +3,7 @@ import CONSTANTS from '@/../script/constant/json/api.json'
 const api_url = process.env.ALT_DATA_API_URL || CONSTANTS.ALT_DATA_API_URL
 
 export const fetchAgreements = async ( config:any = {} ): Promise<any> => {
+  return []
   try {
     const response:any = await fetch(`${api_url}/contracts`, config);
     if (!response.ok) {

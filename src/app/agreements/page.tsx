@@ -24,10 +24,10 @@ export default async function Page() {
             <SidebarLinks links={[
               {label:"Inventory", icon:"inventory", iconClass:"tx-lg",url:"/inventory"},
               {label:"Add Unit", icon:"unit", iconClass:"tx-lg", url:"/unit/add"},
-              !!session.can.agreement ?
-                {label:"Agreements", icon:"agreements", iconClass:"tx-lg",url:"/agreements"}
-                :
-                {label:"Roles", icon:"unit", iconClass:"tx-lg", url:"/roles"},  
+              // !!session.can.agreement ?
+              //   {label:"Agreements", icon:"agreements", iconClass:"tx-lg",url:"/agreements"}
+              //   :
+              //   {label:"Roles", icon:"unit", iconClass:"tx-lg", url:"/roles"},  
               {label:"Users", icon:"users", iconClass:"tx-lg", url:"/users"},
             ]} />
             </>

@@ -2,6 +2,15 @@
 function Component ({}) {
     return (
         <>
+        <a href="/">
+        <h1 className='mb-8'>
+            <div> duno  </div>
+            <div className="tx-sm"> Abraham Duno&apos;s Projects Archive </div>
+            {/* <div> Management </div> */}
+            {/* <div> System </div> */}
+          </h1>
+          </a>
+          
         <h1 className=''>
             <div> An example of  </div>
             <div> synced data </div>

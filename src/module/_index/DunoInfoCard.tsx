@@ -4,7 +4,7 @@ function Component ({}) {
         <>
         <a href="/">
         <h1 className=''>
-            <div> Portfolio  </div>
+            <div> duno  </div>
             <div className="tx-sm"> Abraham Duno&apos;s Projects Archive </div>
             {/* <div> Management </div> */}
             {/* <div> System </div> */}

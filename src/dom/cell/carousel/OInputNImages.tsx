@@ -16,7 +16,6 @@ import { AppContext } from '@/../script/state/context/AppContext';
 import { SliderCarousel } from '@/dom/cell/carousel/SliderCarousel';
 import CSS from '@/../style/module/Slider.module.css'
 import { InputImage } from '@/dom/atom/inputs/InputImage';
-import { useAuth } from '@/../script/state/context/AuthContext';
 type I_OInputNImages = {
   uid: string; filelistString: string;
   config?: any; 
@@ -33,7 +32,6 @@ export const OInputNImages = ({
       refetchImagesArray()
   },[])
   /****** DATA ******/
-  const { jwt, user }:any = useAuth()
   const app:any = useContext(AppContext)
   const $childRef =           useRef<any>()
   const $divObj:any =          useRef<HTMLDivElement>()
@@ -120,24 +118,24 @@ export const OInputNImages = ({
     let theUrl = API_IMAGE_UPLOAD_BASE+`${uid}/`
     s__failedUpload(false)
 
-    let {req, payload}:any = await fetchPostImage(theUrl, firstCurrentFile, {
-      jwt:jwt,
-      onProgress: (e:any)=>{s__percentComplete(parseInt(`${(e.loaded / e.total)*100}`))},
-      onReady: () => {
-        if (req.readyState === 4 && req.status >= 300) { s__isUploading(false); s__failedUpload(true) }
-      },
-    })
+    // let {req, payload}:any = await fetchPostImage(theUrl, firstCurrentFile, {
+    //   jwt:null,
+    //   onProgress: (e:any)=>{s__percentComplete(parseInt(`${(e.loaded / e.total)*100}`))},
+    //   onReady: () => {
+    //     if (req.readyState === 4 && req.status >= 300) { s__isUploading(false); s__failedUpload(true) }
+    //   },
+    // })
     
-    req.addEventListener('load', async (e:any) => {
-      s__isUploading(false)
-      await refetchImagesArray()
-      s__isOpen(false);s__isGalleryModal(false)
-      s__percentComplete(0)            
-      s__firstFile(null)
-      app.alert("success", "Image uploaded successfully!")
-      await refetch()
-    })
-    req.send(payload);
+    // req.addEventListener('load', async (e:any) => {
+    //   s__isUploading(false)
+    //   await refetchImagesArray()
+    //   s__isOpen(false);s__isGalleryModal(false)
+    //   s__percentComplete(0)            
+    //   s__firstFile(null)
+    //   app.alert("success", "Image uploaded successfully!")
+    //   await refetch()
+    // })
+    // req.send(payload);
   }
 
 
@@ -163,14 +161,7 @@ export const OInputNImages = ({
                   </button>
                   <hr className="w-100"/>
                 </>}
-                {user.apiname == "ims" && /* */
-                  <button className={`flex-center flex-justify-start pa-2  w-100 opaci-chov--50`}
-                    onClick={()=>{s__isOpen(!isOpen);s__isGalleryModal(!isGalleryModal)}}
-                  >
-                    <span className="px-1 tx-lgx duno-tx-faded"><BsPlus /></span>
-                    <span className="pb-1 tx-mdl opaci-75 tx-ls-1">Add</span>
-                  </button>
-                }
+                
               </div>
             </div>
           </div>

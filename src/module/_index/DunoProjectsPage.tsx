@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import TechStackTable from './TechStackTable';
 import ContextConnectedTable from '../inventory/ContextConnectedTable';
 import { getSupabaseClient } from '../../../script/state/repository/supabaseClient';
 import { fetchDemoList } from '../../../script/state/repository/demo';
@@ -13,7 +14,7 @@ export default async function DunoProjectsPage() {
   const theGameArray: any = theArray.filter((x: any) => (x.category == "game"))
 
   const theLatestArray: any = theArray.filter((x: any) => (!!x.vip))
-  const theStandardsArray: any = theArray.filter((x: any) => (!!x.techstack))
+  const theStandardsArray: any = theArray.filter((x: any) => (x.category == "tech"))
 
   return (<>
     <main className='flex-col pos-rel  ' >
@@ -107,7 +108,7 @@ export default async function DunoProjectsPage() {
               <div>
                 <hr className='mb-4' />
                 {/* @ts-expect-error */}
-                <div> <ContextConnectedTable initArray={theStandardsArray} /> </div>
+                <div> <TechStackTable initArray={theStandardsArray} /> </div>
                 <br className='my-8 ' />
               </div>
             </details>

@@ -1,7 +1,6 @@
 import '@/../style/duno-theme.css'
 import '@/../style/reset.css'
 import '@/../style/css.css'
-import { fetchSession } from '../../script/state/repository/session'
 import AppClientProvider from "@/dom/organ/layout/AppClientProvider"
 
 export const metadata = {
@@ -10,7 +9,6 @@ export const metadata = {
 }
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
-  const session = await fetchSession()
   return (
     <html lang="en">
       <head>
@@ -21,7 +19,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         `}/>
       </head>
       <body className="ma-0 h-min-100vh" > 
-        <AppClientProvider session={session}>
+        <AppClientProvider>
           <> {children}  </>
         </AppClientProvider>
       </body>

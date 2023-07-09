@@ -1,6 +1,5 @@
 import { NextRequest } from "next/server"
 import { fetchPostWjwt } from "@/../script/util/helper";
-import { getJWTCookie } from "@/../script/state/repository/session";
 
 export async function POST(request: NextRequest) {
   const jwt:any = getJWTCookie()

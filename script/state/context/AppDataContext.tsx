@@ -5,7 +5,7 @@ import React, { createContext, FC, useContext, useEffect, useState } from "react
 export const AppData = createContext<IAppDataContext | null>(null);
 
 const AppDataProvider:any = (props:any) => {
-  const { session: session, children } = props;
+  const { children } = props;
 
   const asd = () => {
 

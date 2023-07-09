@@ -11,14 +11,13 @@ import AlertContainer from '@/dom/atom/common/AlertContainer';
 import { useNavigationEvent } from '@/../script/util/hook/useNavigationEvent';
 import { InventoryProvider } from '@/../script/state/context/InventoryContext';
 
-function Component({ session, children, }: { session: any, children: React.ReactElement }) {
+function Component({ children, }: { children: React.ReactElement }) {
   const searchParams:any = useSearchParams();
   const queryClient = new QueryClient()
   const [filters,s__filters] = useState({})
   const [alertMap,alertMap__do] = useMap<string,any>(DEFAULT_ALERT_MAPARRAY)
   const [sidebarLinks,s__sidebarLinks] = useState([])
   const [sidebarPages,s__sidebarPages] = useState([])
-  const [_session,s__session] = useState([])
   const alertNotification = (category="neutral", msg="")=>{
   alertMap__do.setAll(DEFAULT_ALERT_MAPARRAY)
       setTimeout(()=>{alertMap__do.set(category, msg)},100)
@@ -39,7 +38,6 @@ function Component({ session, children, }: { session: any, children: React.React
       },
       sidebarLinks,s__sidebarLinks,
       sidebarPages,s__sidebarPages,
-      session,s__session,
       alertMap,alertMap__do,
       alertReset:()=>{alertMap__do.setAll(DEFAULT_ALERT_MAPARRAY)},
       alert:(category:any, msg:any)=>{ alertNotification(category, msg) }

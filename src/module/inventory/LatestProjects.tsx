@@ -15,13 +15,13 @@ function Component ({initArray}:any) {
         return (<>
           <Dropdown buttonTitle={buttonActionText} buttonClass={buttonActionClass}>
             <div className="flex-col flex-align-stretch gap-1 bg-white pa-2 bord-r-8 z-100  ">
-              <Link  href={`unit/${id}`} className="duno-button-primary clickble nowrap"
-                onClick={()=>{}}
-              >
-                View Details
-              </Link>
               {!!foundIndex && <>
                 {!!initArray[foundIndex-1].url &&<>
+                  <Link  href={initArray[foundIndex-1].docs || ""} className="duno-button-primary clickble nowrap"
+                    onClick={()=>{}}
+                  >
+                    View Details
+                  </Link>
                     <Link  href={initArray[foundIndex-1].url || ""} className="duno-button-faded clickble nowrap"
                         target="_blank"
                         // onClick={()=>{s__loading(id)}}
@@ -50,6 +50,7 @@ function Component ({initArray}:any) {
                         // { key: "name", title: "Name"},
                         { key: "category", title: "Category", class:""},
                         { key: "title", title: "Title"},
+                        { key: "desc", title: "Description"},
                     ]
                 }}
             />

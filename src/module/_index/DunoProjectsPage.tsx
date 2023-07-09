@@ -1,6 +1,4 @@
 import Image from 'next/image';
-import { fetchSession } from '@/../script/state/repository/session';
-import ScreenContainer from '@/dom/atom/common/ScreenContainer';
 import ContextConnectedTable from '../inventory/ContextConnectedTable';
 import { getSupabaseClient } from '../../../script/state/repository/supabaseClient';
 import { fetchDemoList } from '../../../script/state/repository/demo';
@@ -9,36 +7,28 @@ import { PortfolioHtmlOptions } from './PortItems';
 
 export default async function DunoProjectsPage() {
   const supabaseC = getSupabaseClient()
-  const theArray:any = await fetchDemoList(supabaseC)
-  const theCodeArray:any = theArray.filter((x:any)=>(x.category == "code"))
-  const theArtArray:any = theArray.filter((x:any)=>(x.category == "art"))
-  const theGameArray:any = theArray.filter((x:any)=>(x.category == "game"))
+  const theArray: any = await fetchDemoList(supabaseC)
+  const theCodeArray: any = theArray.filter((x: any) => (x.category == "code"))
+  const theArtArray: any = theArray.filter((x: any) => (x.category == "art"))
+  const theGameArray: any = theArray.filter((x: any) => (x.category == "game"))
 
-  const theLatestArray:any = theArray.filter((x:any)=>(!!x.vip))
-  const theStandardsArray:any = theArray.filter((x:any)=>(!!x.techstack))
+  const theLatestArray: any = theArray.filter((x: any) => (!!x.vip))
+  const theStandardsArray: any = theArray.filter((x: any) => (!!x.techstack))
 
-  // const categories:any = {
-  //   code: theArray.filter((x:any) => x.category === "code"),
-  //   art: theArray.filter((x:any) => x.category === "art"),
-  //   game: theArray.filter((x:any) => x.category === "game"),
-  // };
-  
   return (<>
-    <ScreenContainer badgeClass="" />
-
     <main className='flex-col pos-rel  ' >
       <div className=' pos-rel w-100 '>
         <div className='flex pos-rel flex-wrap gap-1 pa-1'>
-          {PortfolioHtmlOptions.map((option:any,index:number) => {
-      const { href, className, target, alt, src, width, height, additionalClassName } = option;
-      return (
-        <a href={`${href}`} className={`${className} ${additionalClassName}`} target={`${target}`} key={index}>
-          <Image alt={`${alt}`} src={`${src}`}  width={parseInt(`${width}`)}
-           height={parseInt(`${height}`)}  /> </a>
-        );
-      })
-      
-      }
+          {PortfolioHtmlOptions.map((option: any, index: number) =>
+            {
+              const { href, className, target, alt, src, width, height, additionalClassName } = option;
+              return (
+                <a href={`${href}`} className={`${className} ${additionalClassName}`} target={`${target}`} key={index}>
+                  <Image alt={`${alt}`} src={`${src}`} width={parseInt(`${width}`)}
+                    height={parseInt(`${height}`)} /> </a>
+              );
+            }
+          )}
         </div>
         <div className=' flex   '>
           <div className='flex-1 flex-col  flex-1 flex-align-star flex-align-stretch px-8 Q_xs_px-2 pt- '>

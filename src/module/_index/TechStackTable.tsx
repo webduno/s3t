@@ -7,7 +7,7 @@ async function TechStackTable ({ initArray }:any) {
                 config={{idKey:"id",mainKey:"id",
                     childrenArray: [
                         { key: "title", title: "Title"},
-                        { key: "date", title: "Since"},
+                        { key: "desc", title: "Details"},
                     ]
                 }}
             />

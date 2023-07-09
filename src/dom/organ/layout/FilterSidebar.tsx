@@ -38,33 +38,6 @@ function Component({ online=true }) {
 
 
 
-
-    // const filtersObj = useMemo(()=>{
-    //     // return INVENTORY_FILTERS_OBJ
-    //     // if (inv.unitsArray.length == 0) return INVENTORY_FILTERS_OBJ
-    //     let filtersObj = {...INVENTORY_FILTERS_OBJ}
-    //     filtersObj["sales_status"].optsArray = q__foreigns.sales_statuses
-    //     if (inv.unitsArray.length > 0) {
-    //         // console.log("inv.unitsArray.length", inv.unitsArray.length)
-    //         filtersObj["sales_status"].optsArray = filtersObj["sales_status"].optsArray.map((anItem:any, index:any)=>{
-    //             let theCount = inv.unitsArray.filter((theUnit,i)=> theUnit.sales_status == anItem.id  )
-    //             return {...anItem, ...{ _COUNT: theCount.length }}
-    //         })
-    //     }
-    //     filtersObj["dealer"].optsArray = q__foreigns.dealers
-    //     if (inv.unitsArray.length > 0) {
-    //         filtersObj["dealer"].optsArray = filtersObj["dealer"].optsArray.map((anItem:any, index:any)=>{
-    //             let theCount = inv.unitsArray.filter((theUnit,i)=> theUnit.dealer == anItem.name  )
-    //             return {...anItem, ...{ _COUNT: theCount.length }}
-    //         })
-    //     }
-    //     return filtersObj
-    //     // eslint-disable-next-line react-hooks/exhaustive-deps
-    // },[q__foreigns, inv.unitsArray])
-
-
-
-
     
 
     const filtersObj = useMemo(() => {

@@ -5,7 +5,6 @@ import { fetchDB, fetchDemoList } from "../../../script/state/repository/demo"
 async function Component ({ }:any) {
     const supabaseC = getSupabaseClient()
     const theArray:any = await fetchDemoList(supabaseC)
-    console.log("theArray", theArray)
 
     return (
         <div>

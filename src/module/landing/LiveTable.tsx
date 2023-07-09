@@ -7,7 +7,6 @@ function Component ({}) {
     const [form, s__form] = useState({name:""})
     const [theArray, s__theArray]:any = useState([])
     const updateNewData = (e:any) => {
-        console.log("e", e)
         s__form({name:e.value})
     }
     const addItem = () => {

@@ -44,7 +44,6 @@ function Component({ children, }: { children: React.ReactElement }) {
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   },[alertMap, filters, searchParams,sidebarLinks, sidebarPages])
-  // useNavigationEvent( ()=>{ console.log("loaded page") }, () => ()=>{ console.log("navigated") });
 
   return (
     <AppContext.Provider value={appValue}>

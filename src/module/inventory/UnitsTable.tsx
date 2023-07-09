@@ -22,7 +22,6 @@ function Component ({ initialArray, q_foreigns }:any) {
   useEffect(() => {
     async function getForeigns() {
       const q__foreigns = await fetchUnitForeigns()
-      // console.log("q__foreigns", q__foreigns)     
       s__q__f(q__foreigns)
     }
     getForeigns()
@@ -96,7 +95,6 @@ function Component ({ initialArray, q_foreigns }:any) {
     </>)
   }
   const selectRow = (id:any)  => {
-    console.log("id", id)
     return
   }
 

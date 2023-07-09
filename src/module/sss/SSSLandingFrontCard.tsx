@@ -1,5 +1,5 @@
 
-function Component ({}) {
+export function SSSLandingFrontCard ({}) {
     return (
         <>
         <a href="/">
@@ -41,4 +41,4 @@ function Component ({}) {
     )
 }
 
-export default Component
+export default SSSLandingFrontCard

@@ -49,7 +49,7 @@ export default async function Page() {
     <main className='flex-col pos-rel  ' >
       <div className=' pos-rel w-100 '>
         <div className='flex pos-rel flex-wrap gap-1 pa-1'>
-          <a href="https://gtabtc.vercel.app/" className='opaci-chov--50 bord-r-5 noverflow' target='_blank'>
+          <a href="https://bytc.vercel.app/" className='opaci-chov--50 bord-r-5 noverflow' target='_blank'>
             <Image alt="asd"   src="/images/gtabtc.png" 
               width="300"
               height="200" className='block'
@@ -61,7 +61,7 @@ export default async function Page() {
               height="200" className='block'
             />
           </a>
-          <a href="https://tresduno.vercel.app/" className='opaci-chov--50 bord-r-5 noverflow' target='_blank'>
+          <a href="https://webpov.vercel.app/" className='opaci-chov--50 bord-r-5 noverflow' target='_blank'>
             <Image alt="asd"   src="/images/tresd.jpg" 
               width="300"
               height="200" className='block'
@@ -79,13 +79,13 @@ export default async function Page() {
               height="200" className='block'
             />
           </a>
-          <a href="#" className='opaci-chov--50 bord-r-5 noverflow'>
+          <a href="https://opet.vercel.app/test?pet=1" className='opaci-chov--50 bord-r-5 noverflow'>
             <Image alt="asd"   src="/images/gam.jpg" 
               width="300"
               height="200" className='block'
             />
           </a>
-          <a href="#" className='opaci-chov--50 bord-r-5 noverflow'>
+          <a href="https://3duno.vercel.app/" className='opaci-chov--50 bord-r-5 noverflow'>
             <Image alt="asd"   src="/images/3duno.png" 
               width="300"
               height="200" className='block'
@@ -97,13 +97,13 @@ export default async function Page() {
               height="200" className='block'
             />
           </a>
-          <a href="https://duno.vercel.app/" className='opaci-chov--50 bord-r-5 noverflow' target='_blank'>
-            <Image alt="asd"   src="/images/duno.png" 
+          <a href="https://runbob.vercel.app/" className='opaci-chov--50 bord-r-5 noverflow' target='_blank'>
+            <Image alt="asd"   src="/images/runbob.png" 
               width="300"
               height="200" className='block'
             />
           </a>
-          <a href="https://sss3.vercel.app/" className='opaci-chov--50 bord-r-5 noverflow' target='_blank'>
+          <a href="#" className='opaci-chov--50 bord-r-5 noverflow' target='_blank'>
             <Image alt="asd"   src="/images/sss.jpg" 
               width="300"
               height="200" className='block'
@@ -115,7 +115,7 @@ export default async function Page() {
               height="200" className='block'
             />
           </a>
-          <a href="https://abrahamduno.vercel.app/" className='opaci-chov--50 bord-r-5 noverflow' target='_blank'>
+          <a href="https://runbob.vercel.app" className='opaci-chov--50 bord-r-5 noverflow' target='_blank'>
             <Image alt="asd"   src="/images/abrd.png" 
               width="300"
               height="200" className='block'

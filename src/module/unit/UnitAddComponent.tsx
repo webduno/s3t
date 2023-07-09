@@ -155,17 +155,17 @@ function Component({
           />}
         </div>
         <div className="flex-center mt-8 pt-100 w-100">
-          <div className="flex-wrap pa-8  w-75 ims-bg-faded bord-r-8 box-shadow-2">
-            <div className="ims-button-primary  ">
+          <div className="flex-wrap pa-8  w-75 duno-bg-faded bord-r-8 box-shadow-2">
+            <div className="duno-button-primary  ">
               <Link  className=" px-2 py-4 tx-" href="/unit/add">
                 <div className="tx-ls-1 tx-lgx">+ New Unit </div>
                 <p className="mt-1 tx-">Add Unit to Inventory</p>
               </Link>
             </div>
-            <Link  className="ims-cardlink box-shadow-3" href="/inventory">
+            <Link  className="duno-cardlink box-shadow-3" href="/inventory">
               <h2 className="">Inventory &uarr;</h2><p className="">Unit List</p>
             </Link>
-            <Link  className="ims-cardlink box-shadow-3" href="/inventory?stts=1">
+            <Link  className="duno-cardlink box-shadow-3" href="/inventory?stts=1">
               <h2 className="">Store &rarr;</h2><p className="">Available Units</p>
             </Link>
           </div>
@@ -180,7 +180,7 @@ function Component({
         <div className="flex-between Q_xs_md_flex-col">
           {loadings != "" &&
             <div className='tx-lgx mt-200 flex flex-align-end flex-justify-center   flex-1'>
-              <div className='ims-badge-faded mx-2 px-2 py-2 '>Loading</div>
+              <div className='duno-badge-faded mx-2 px-2 py-2 '>Loading</div>
               <div className=' px-2 py-2 '>Creating New Unit...</div>
             </div>
           }

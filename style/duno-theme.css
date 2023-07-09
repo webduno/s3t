@@ -1,0 +1,124 @@
+:root {
+  --secondary: #7C3AED;
+  --tertiary: #ED7C3A;
+
+  --primary-sat: #027A48;
+  --primary: #3E5F58;
+  --primary-desat: #B5CFC9;
+  --primary-light: #ECFDF3;
+
+  --bg-faded: #F5F7F6;
+  --bg-lightest: #F9FAFB;
+
+  --tx-error: #B91C1C;
+  --tx-link: #026AA2;
+  --tx-faded: #667085;
+  --tx-dark: #101828;
+  --tx-lightdark: #344054;
+
+  --border-faded: #D0D5DD;
+}
+body { font-family: "Inter"; }
+
+
+
+/* BACKGROUND */
+.duno-hov-primary:hover { background: var(--primary); }
+.duno-bg-lightest { background: var(--bg-lightest); }
+.duno-bg-faded { background: var(--bg-faded); }
+.duno-bg-primary { background: var(--primary); }
+.duno-bg-primary-desat { background: var(--primary-desat); }
+.duno-bg-faded-odd:nth-child(2n) { background: var(--bg-faded); }
+.duno-bg-faded-even:nth-child(2n+1) { background: var(--bg-faded); }
+.duno-bg-hov-faded:hover { background: var(--bg-faded); }
+.duno-bg-lightest-odd:nth-child(2n) { background: var(--bg-lightest); }
+
+
+
+/* TEXT */
+.duno-tx-primary { color: var(--primary); }
+.duno-tx-error { color: var(--tx-error); }
+.duno-tx-dark { color: var(--tx-dark); }
+.duno-tx-lightdark { color: var(--tx-lightdark); }
+.duno-tx-link { color: var(--tx-link); }
+.duno-tx-faded { color: var(--tx-faded); }
+.duno-hov-tx-primary:hover { color: var(--primary); }
+.duno-underline-primary { text-decoration-color: var(--primary); }
+.duno-underline-link { text-decoration-color: var(--tx-link); }
+
+
+
+/* BADGE */
+.duno-badge-primary, .duno-badge-faded, .duno-badge-secondary, .duno-badge-tertiary, .duno-badge-error,
+.duno-badge-success {
+  border-radius: 8px;
+}
+.duno-badge-faded { background: var(--bg-faded); color: var(--tx-faded); }
+.duno-badge-success { background: var(--primary-light); color: var(--primary-sat); }
+.duno-badge-secondary { background: var(--secondary); color: white; }
+.duno-badge-tertiary { background: var(--bg-faded); color: var(--tertiary); }
+.duno-badge-error { background: var(--bg-faded); color: var(--tx-error); }
+
+
+
+
+/* BUTTON */
+.duno-button-primary,
+.duno-button-faded {
+  cursor: pointer;
+}
+
+.duno-button-faded:hover,
+.duno-button-primary:hover {
+  opacity: 0.5;
+}
+
+.duno-button-faded {
+  border: 1px solid var(--border-faded)
+}
+
+.duno-button-primary {
+  padding: 8px 20px;
+  background: var(--primary);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--primary);
+  border-radius: 8px;
+}
+
+.duno-button-faded {
+  border-radius: 8px;
+  padding: 8px 20px;
+  background: white;
+  display: flex;
+  justify-content: center;
+}
+
+.duno-circ-button-primary-desat {
+  cursor: pointer;
+  background: var(--primary-desat);
+  color: var(--primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+}
+
+
+.duno-cardlink {
+  color: inherit;
+  margin: 5px;
+  padding: 15px 30px;
+  border: 1px solid var(--primary);
+  border-radius: 8px;
+  color: var(--primary)
+}
+
+.duno-cardlink:hover,
+.duno-cardlink:focus,
+.duno-cardlink:active {
+  color: #0070f3;
+  border-color: #0070f3;
+}

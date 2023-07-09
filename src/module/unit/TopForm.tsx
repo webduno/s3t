@@ -17,7 +17,7 @@ function Component ({
     }
 
     return (
-    <div className="flex-wrap gap-2 ims-tx-faded  tx-md ">
+    <div className="flex-wrap gap-2 duno-tx-faded  tx-md ">
         <div className="flex-center">
             <div className="tx-bold-6 pr-1">Sales Status:</div>
             <SalesStatusBadge value={parseInt(unit.sales_status)} reference={[""]} />
@@ -39,7 +39,7 @@ function Component ({
         <div className="flex">
             <span className="tx-bold-8">Work Order:</span>
             {!!unit.workorder && 
-                <a className="ims-tx-link opaci-hov--50 pl-0 pa-1 tx-bold-5 mr-3 pl-2 "
+                <a className="duno-tx-link opaci-hov--50 pl-0 pa-1 tx-bold-5 mr-3 pl-2 "
                     href={`${unit.workorder.invoice_url}`}
                 >
                     {unit.workorder.invoice_title}

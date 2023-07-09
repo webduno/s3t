@@ -81,7 +81,7 @@ export default function Component({ unitsArray=[], fetchConfig=null, tableConfig
         }
         <div className="flex-center flex-align-center gap-2 ">
             <div onClick={()=>{s__isSelectable(!isSelectable); if (isSelectable) {s__selectedUnits([])}}}
-                className={`opaci-chov--50  mb-2 ${isSelectable ? "ims-button-faded" : "ims-button-primary"}`}
+                className={`opaci-chov--50  mb-2 ${isSelectable ? "duno-button-faded" : "duno-button-primary"}`}
             >
                 
                 {isSelectable ? "Cancel" : "Select Multiple"}
@@ -101,7 +101,7 @@ export default function Component({ unitsArray=[], fetchConfig=null, tableConfig
                     </div>
                     {selectedUnits.length > 0 &&
                         <div onClick={()=>{ deleteUnits(selectedUnits) }}
-                            className="ims-button-faded border-red tx-red opaci-25"
+                            className="duno-button-faded border-red tx-red opaci-25"
                         >
                             Delete Selected Units
                         </div>
@@ -119,7 +119,7 @@ export default function Component({ unitsArray=[], fetchConfig=null, tableConfig
                     // boolConfig={[]}
                     // actionCard=null
                     actionCard={(id:any)=>(
-                        <button className={`ims-button-faded  tx-green block `}
+                        <button className={`duno-button-faded  tx-green block `}
                             onClick={async (evt)=>{
                                 console.log("id, evt",id,evt)
                                 s__selectedItem(id)
@@ -130,7 +130,7 @@ export default function Component({ unitsArray=[], fetchConfig=null, tableConfig
                         </button>
                     )}
                     // actionCard={(id:any)=>(
-                    //     <button className={`ims-button-faded  tx-green block `}
+                    //     <button className={`duno-button-faded  tx-green block `}
                     //         onClick={async (evt)=>{
                     //             console.log("id, evt",id,evt)
                     //             deleteUnit(id)

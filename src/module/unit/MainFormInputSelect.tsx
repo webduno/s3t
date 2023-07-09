@@ -13,7 +13,7 @@ export const MainFormInputSelect = ({
     updateNewData,
 }: MainFormInputSelectProps)=>{
     return (<>
-        <div className="w-50 tx-bold-5 tx-smd ims-tx-lightdark pr-4">
+        <div className="w-50 tx-bold-5 tx-smd duno-tx-lightdark pr-4">
             {label || "Label"}
             {!!sublabel &&
                 <div className="tx-bold-3 tx-sm pt-1">{sublabel}</div>
@@ -22,7 +22,7 @@ export const MainFormInputSelect = ({
         <div className="w-50 ">
 
             {!editMode  ?
-                <div className={`tx-md ims-tx-faded pl-5 pr-4 `}>
+                <div className={`tx-md duno-tx-faded pl-5 pr-4 `}>
                     {!!defaultDisplay ? defaultDisplay : display}
                     {/* {!!defaultDisplay && <div>{!!defaultDisplay ? defaultDisplay : display}</div>} */}
                     {/*                     

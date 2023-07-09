@@ -136,7 +136,7 @@ export const OInputNMeasure = ({
     <div className="flex flex-align-start w-100  ">
         <div className={` flex ${editMode ? CSS["n-measure_label"] : "w-50"} pt-0 `}>
             <div className={
-                    "flex-1 flex-col flex-align-start w-20 tx-bold-5 tx-smd ims-tx-lightdark pr-4"
+                    "flex-1 flex-col flex-align-start w-20 tx-bold-5 tx-smd duno-tx-lightdark pr-4"
                 }
             >
                 <div className={`${_useDeviceXS_LG && "tx-mdl"}`}>{label}</div>
@@ -147,7 +147,7 @@ export const OInputNMeasure = ({
         </div>
         <div className={` ${editMode ? CSS["n-measure_display"] : " w-50 "}  flex-col flex-align-start `}>
             {!editMode
-              &&<div className="tx-md ims-tx-faded pl-5 pr-4 flex">
+              &&<div className="tx-md duno-tx-faded pl-5 pr-4 flex">
                     {Array.from(inputkeyMap.entries()).map(([key, aValue],index)=>{
                         const measureTitle = aValue.title[0]
                         const firstDimensionTitle = aValue.format_titles[0]
@@ -190,7 +190,7 @@ export const OInputNMeasure = ({
                             className={
                                 (extraDimensionToggler.get(key) ? "w-50 " : "w-50 ")+
                                 " clickble opaci-ahov--50 flex-center opaci-ahov-0 "+
-                                " tx-bold-5 ims-tx-lightdark tx-smd "
+                                " tx-bold-5 duno-tx-lightdark tx-smd "
                             }
                             onClick={()=>{toggleExtraDimension(key)}}
                         >

@@ -78,9 +78,9 @@ const Component = forwardRef(({masterKeyName, theUrl, q__queriedObj, queriedArra
     return (<>
         <div className="flex-center gap-2 flex-1">
             <div className="flex-wrap gap-1">
-                <button onClick={createItem} className="ims-button-primary clickble mx-2 mr-8">Add Item</button>
+                <button onClick={createItem} className="duno-button-primary clickble mx-2 mr-8">Add Item</button>
                 <form onSubmit={createItem}>
-                    <input placeholder='Item Slug' className='ims-button-faded' value={form[keyProperty]}
+                    <input placeholder='Item Slug' className='duno-button-faded' value={form[keyProperty]}
                         onChange={(e:any)=>handleChange(e,keyProperty)}  
                     />
                 </form> 
@@ -88,27 +88,27 @@ const Component = forwardRef(({masterKeyName, theUrl, q__queriedObj, queriedArra
             {!!queriedArray &&
                 <div className="flex-wrap gap-1">
                     <form onSubmit={updateItem}>
-                        <input placeholder='ID' className='ims-button-faded w-80px' value={form.id}
+                        <input placeholder='ID' className='duno-button-faded w-80px' value={form.id}
                             onChange={(e:any)=>handleChange(e,"id")} 
                         />
                     </form> 
-                    <button onClick={updateItem} className="ims-button-primary clickble ">Update {form.id}</button>
-                    <button onClick={()=>{deleteUnit()}} className="ims-button-primary clickble opaci-75  ">Delete {form.id}</button>
+                    <button onClick={updateItem} className="duno-button-primary clickble ">Update {form.id}</button>
+                    <button onClick={()=>{deleteUnit()}} className="duno-button-primary clickble opaci-75  ">Delete {form.id}</button>
                 </div>
             }
         </div>
         {keyProperty == "key" &&
             <div className="flex-col gap-1  w-100">
-                <button onClick={createCol} className="ims-button-primary opaci-75 nowrap clickble w-100 ">Update metadata</button>
+                <button onClick={createCol} className="duno-button-primary opaci-75 nowrap clickble w-100 ">Update metadata</button>
                 <div className="flex-center gap-1  ">
-                    <button onClick={createCol} className="ims-button-primary nowrap clickble  ">Add col</button>
-                    <button onClick={createCol} className="ims-button-primary nowrap clickble  ">Update col</button>
+                    <button onClick={createCol} className="duno-button-primary nowrap clickble  ">Add col</button>
+                    <button onClick={createCol} className="duno-button-primary nowrap clickble  ">Update col</button>
                 </div>        
                 <form onSubmit={createCol} className="flex gap-1">
-                    <input placeholder='Column Name' className='ims-button-faded w-150px' value={form.colName}
+                    <input placeholder='Column Name' className='duno-button-faded w-150px' value={form.colName}
                         onChange={(e:any)=>handleChange(e,"colName")} 
                     />
-                    <input placeholder='Value' className='ims-button-faded w-100px' value={form.colValue}
+                    <input placeholder='Value' className='duno-button-faded w-100px' value={form.colValue}
                         onChange={(e:any)=>handleChange(e,"colValue")} 
                     />
                 </form> 
@@ -116,13 +116,13 @@ const Component = forwardRef(({masterKeyName, theUrl, q__queriedObj, queriedArra
         }
         <div className="flex-col gap-1 ">
             {/* {!!queriedArray &&
-                <button onClick={()=>{deleteAll()}} className="ims-button-primary clickble opaci-75  ">Clear All</button>
+                <button onClick={()=>{deleteAll()}} className="duno-button-primary clickble opaci-75  ">Clear All</button>
             } */}
             {!!queriedArray &&
-                <button onClick={()=>{deleteAll()}} className="ims-button-faded clickble opaci-75  ">Delete Section</button>
+                <button onClick={()=>{deleteAll()}} className="duno-button-faded clickble opaci-75  ">Delete Section</button>
             }
             {backup.length > 0 &&
-            <button onClick={()=>{importFromBackup()}} className="ims-button-primary  clickble   "
+            <button onClick={()=>{importFromBackup()}} className="duno-button-primary  clickble   "
                 style={{filter:"hue-rotate(180deg)"}}
             >
                 Backup

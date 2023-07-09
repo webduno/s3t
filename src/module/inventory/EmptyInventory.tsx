@@ -15,7 +15,7 @@ export const EmptyInventory =() =>{
         }
         {isDevEnvironment &&
             <a href="https://ims.jinaron.com/api/v1/units/" target="_blank" rel="noreferrer" 
-                className="py-4 tx-lg pt-1 ims-tx-link opaci-chov--50"
+                className="py-4 tx-lg pt-1 duno-tx-link opaci-chov--50"
             >
                 Check API Status
             </a>

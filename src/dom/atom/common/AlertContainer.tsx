@@ -7,7 +7,7 @@ function Component({
     msg,
     delay = 4000,
     s__msg,
-    badgeClass="ims-badge-faded",
+    badgeClass="duno-badge-faded",
 }: any) {
     useEffect(()=>{
         if (msg == "") return
@@ -24,7 +24,7 @@ function Component({
 }
 
 export function AlertNotification ({
-    onHide=()=>{}, delay=4000, badgeClass="ims-badge-faded", alertMsg="",s__msg,
+    onHide=()=>{}, delay=4000, badgeClass="duno-badge-faded", alertMsg="",s__msg,
 }: any) {
     const [visible, setVisible] = useState(true)
 

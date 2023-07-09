@@ -2,7 +2,7 @@ import SalesStatusBadge from '@/module/unit/SalesStatusBadge';
 // ReactFunctionComponent
 function Component ({ unit }:any) {
     return (
-    <div className="flex-wrap gap-2 ims-tx-faded py-1 tx-md ">
+    <div className="flex-wrap gap-2 duno-tx-faded py-1 tx-md ">
         <div className="flex nowrap  ">
             <div className="tx-bold-6 mt-1  pr-1">Sales Status:</div>
             <div className=" mr-1      " >
@@ -18,7 +18,7 @@ function Component ({ unit }:any) {
         <div className="flex">
             <span className="tx-bold-8">Work Order:</span>
             {!!unit.workorder && 
-                <a className="ims-tx-link opaci-hov--50 pl-0 pa-1 tx-bold-5 mr-3 pl-2 "
+                <a className="duno-tx-link opaci-hov--50 pl-0 pa-1 tx-bold-5 mr-3 pl-2 "
                     href={`${unit.workorder.invoice_url}`}
                 >
                     {unit.workorder.invoice_title}

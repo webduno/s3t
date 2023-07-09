@@ -81,12 +81,12 @@ function Component ({ initialArray, q_foreigns }:any) {
     return (<>
       <Dropdown buttonTitle={buttonActionText} buttonClass={buttonActionClass}>
         <div className="flex-col flex-align-stretch gap-1 bg-white pa-2 bord-r-8 z-100 ">
-          <Link  href={`unit/${id}`} className="ims-button-primary clickble nowrap"
+          <Link  href={`unit/${id}`} className="duno-button-primary clickble nowrap"
             onClick={()=>{s__loading(id)}}
           >
             {id == loading && <div className="spin-1 px-1">-</div>} View Details
           </Link>
-          <Link  href={`builder/3d/${id}`} className="ims-button-faded clickble nowrap"
+          <Link  href={`builder/3d/${id}`} className="duno-button-faded clickble nowrap"
             // onClick={()=>{s__loading(id)}}
           >
             View Model

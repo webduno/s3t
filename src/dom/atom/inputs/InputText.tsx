@@ -56,7 +56,7 @@ export const InputText = ({
     return (
     <div className="flex-col flex-align-stretch w-100 ">
         <input type="text" value={theValue} onChange={handleChange} ref={$domObj} {...props}
-            className="py-2 px-4 w-100 ims-tx-dark ims-border-fade border-lgrey border-lgrey-20 bord-r-5 tx-mdl"
+            className="py-2 px-4 w-100 duno-tx-dark duno-border-fade border-lgrey border-lgrey-20 bord-r-5 tx-mdl"
         />
     </div>
     )

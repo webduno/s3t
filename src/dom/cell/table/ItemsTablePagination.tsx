@@ -14,12 +14,12 @@ export default function StandardTablePagination ({
 
 
     return(
-    <div className="bloc  pos-rel flex  ims-border-fade border-lgrey flex-justify-start flex-align-center bord-r-b-8"
+    <div className="bloc  pos-rel flex  duno-border-fade border-lgrey flex-justify-start flex-align-center bord-r-b-8"
         style={{borderTop:"0 "}}
     >
         <button onClick={prevPage}
             className={`
-                px-3 py-1 ma-3 flex-center clickble opaci-hov-50 ims-button-faded tx-md 
+                px-3 py-1 ma-3 flex-center clickble opaci-hov-50 duno-button-faded tx-md 
                 ${currentPage == 0 && "invisible"}
             `}
         >
@@ -31,7 +31,7 @@ export default function StandardTablePagination ({
         </div>
         <button onClick={nextPage}
             className={`
-                px-3 py-1 ma-3 flex-center clickble opaci-hov-50 ims-button-faded tx-md 
+                px-3 py-1 ma-3 flex-center clickble opaci-hov-50 duno-button-faded tx-md 
                 ${currentPage == lastPage && "invisible"}
             `}
         >

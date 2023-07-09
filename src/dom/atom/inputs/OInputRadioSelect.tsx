@@ -78,7 +78,7 @@ return (<>
                         {<label
                             onClick={()=>{handleRadioChange({target:{value:`${index+1}`}})}}
                             data-for={`${index+1}`}
-                            className={`clickble  tx-bold-5 ims-tx-lightdark tx-smd flex py-2`}
+                            className={`clickble  tx-bold-5 duno-tx-lightdark tx-smd flex py-2`}
                         >
                             {theInputObj.inputsObj[aRadioSelect].title}
                         </label>}
@@ -90,7 +90,7 @@ return (<>
             <div className="flex-center ">
                 {("0" == radioValue) &&
                     <div className={`
-                        opaci-50  ims-tx-dark flex flex-justify-start ims-border-fade  border-lgrey
+                        opaci-50  duno-tx-dark flex flex-justify-start duno-border-fade  border-lgrey
                         bord-r-8 py-2 tx-mdl w-min-300px px-4 mr-4
                     `}>
                         <i className="opaci-25">Select Type</i>
@@ -173,7 +173,7 @@ return (<>
                 })}
             </div> 
             <div onClick={handleClearUpdate}
-                className="pt-2 flex-center opaci-hov-50 ims-tx-dark clickble  tx-lg pb-2"
+                className="pt-2 flex-center opaci-hov-50 duno-tx-dark clickble  tx-lg pb-2"
             >
                 <BsTrash />
             </div>

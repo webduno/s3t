@@ -144,7 +144,7 @@ export const OInputNImages = ({
 
   /****** HTML ******/
   return (
-    <div className="flex-col bord-r-8  ims-bg-faded w-100 pos-rel" >
+    <div className="flex-col bord-r-8  duno-bg-faded w-100 pos-rel" >
       <SliderCarousel ref={$childRef} {...{GW,filteredFileList:parsedImagesArray,pageOffset, s__pageOffset}} />
 
       <div className="pos-abs  top-0 right-0" >
@@ -153,11 +153,11 @@ export const OInputNImages = ({
         </div>
         {isOpen &&
           <div className="w-min-200px  pos-abs right-0 top-0 "  ref={$divObj}>
-            <div className='tx-mdl z-100 bg-white ims-border-fade border-lgrey bord-r-8  w-100 autoverflow-y' >
+            <div className='tx-mdl z-100 bg-white duno-border-fade border-lgrey bord-r-8  w-100 autoverflow-y' >
               <div className="flex-col flex-align-start flex-justify-start  " >
                 {!!parsedImagesArray.length && <>
                   <button onClick={()=>{s__isOpen(!isOpen);removeCurrentImage()}}
-                    className={`flex-center flex-justify-start pa-2 tx-md ims-tx-error w-100 opaci-chov--50`}
+                    className={`flex-center flex-justify-start pa-2 tx-md duno-tx-error w-100 opaci-chov--50`}
                   >
                     <span className="px-2 "><BsTrash /></span><span className="pb-1">Remove</span>
                   </button>
@@ -167,7 +167,7 @@ export const OInputNImages = ({
                   <button className={`flex-center flex-justify-start pa-2  w-100 opaci-chov--50`}
                     onClick={()=>{s__isOpen(!isOpen);s__isGalleryModal(!isGalleryModal)}}
                   >
-                    <span className="px-1 tx-lgx ims-tx-faded"><BsPlus /></span>
+                    <span className="px-1 tx-lgx duno-tx-faded"><BsPlus /></span>
                     <span className="pb-1 tx-mdl opaci-75 tx-ls-1">Add</span>
                   </button>
                 }

@@ -73,7 +73,7 @@ const SliderCarousel = forwardRef(({
 
                         <div className={
                                 `   ${CSS["emphasis-card"]} ${CSS["nav-dot-button"]}
-                                    ${currentPage != index ? "ims-tx-faded opaci-hov-10" : ""}
+                                    ${currentPage != index ? "duno-tx-faded opaci-hov-10" : ""}
                                     clickble px-2 py-3`
                             }
                              onClick={()=>{s__pageOffset(-GW*index) }}

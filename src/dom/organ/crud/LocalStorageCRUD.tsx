@@ -16,7 +16,7 @@ export default function Component ({updateQueriedToLocalstorage, updateClientToL
             <hr className="my-2 Q_xs_md"/>
             {/* <ItemsTable  displayConfigObj={tableConfigObj} boolConfig={["isActionable", "isCompact"]}
                 actionCard={(id:any)=>(
-                    <button className={`ims-button-faded  tx-green  `}
+                    <button className={`duno-button-faded  tx-green  `}
                         onClick={async (evt)=>{console.log("id, evt",id,evt)}}
                     >
                         <span className="">Delete Unit</span>
@@ -29,7 +29,7 @@ export default function Component ({updateQueriedToLocalstorage, updateClientToL
                     <div className="bg-b-10 tx-center opaci-chov--50 pa-2 bord-r-8" onClick={()=>{updateClientToLocalstorage()}}>
                         Save to Local
                     </div>
-                    <div className="ims-bg-primary tx-center opaci-chov--50 pa-2 bord-r-8 "
+                    <div className="duno-bg-primary tx-center opaci-chov--50 pa-2 bord-r-8 "
                         style={{filter:"hue-rotate(240deg) brightness(220%)"}}
                         onClick={()=>{updateQueriedToLocalstorage()}}
                     >

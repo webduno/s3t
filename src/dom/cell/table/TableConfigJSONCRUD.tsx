@@ -122,7 +122,7 @@ export default function Component ({keyName }:any) {
                     <div className="flex-1"></div>
                     {shouldRenderAddColumnButton && <>
                         <div className=" flex gap-1 r ">
-                            <button className="flex opaci-chov--50 ims-button-primary" onClick={(e:any)=>{ createCol(e) }}>Add Column</button>
+                            <button className="flex opaci-chov--50 duno-button-primary" onClick={(e:any)=>{ createCol(e) }}>Add Column</button>
                             <div className="pa-1 bg-b-20 bord-r-8 flex-col ">
                                 <div className="flex-center " >
                                     {form && "title-"+"new" in form && <>
@@ -148,7 +148,7 @@ export default function Component ({keyName }:any) {
                         </div>
                     </>}
                     {shouldRenderEditColumnsButton &&
-                        <button className="flex gap-1 ims-button-primary opaci-chov--50 px-2 py-1 bord-r-8 "
+                        <button className="flex gap-1 duno-button-primary opaci-chov--50 px-2 py-1 bord-r-8 "
                             onClick={(id:any)=>{ updateSelectedArray(2) }}
                         >
                             <span className="flex">Edit Columns</span>
@@ -211,7 +211,7 @@ export default function Component ({keyName }:any) {
                                     )
                                     ? ""
                                     : (
-                                        <button className="ims-bg-primary tx-white px-2 py-1 bord-r-8"
+                                        <button className="duno-bg-primary tx-white px-2 py-1 bord-r-8"
                                             onClick={async ()=>{ 
                                                 let oldColVal = JSON.parse(settings[keyName][1].colVal)
                                                 await updateData(2, "rest",

@@ -34,8 +34,8 @@ export const SidebarFilterToolbar = ({
     	{Object.keys(configObj).map((configKey,index)=>{
     		// if (!filtersMap || !filtersMap.has(configKey)) return <div key={index}></div>
     		return (
-		        <div className="flex flex-align-center   pa-1 ims-tx-primary  pos-rel" key={index}>
-		        	<span className={`pa-2 flex ims-bg-faded  bord-r-l-8`}>
+		        <div className="flex flex-align-center   pa-1 duno-tx-primary  pos-rel" key={index}>
+		        	<span className={`pa-2 flex duno-bg-faded  bord-r-l-8`}>
 						<div className='tx-bold-3 pr-1'>
 	        				{configObj[configKey].title}:
 						</div>
@@ -44,7 +44,7 @@ export const SidebarFilterToolbar = ({
 							{/* {filtersMap.get(configKey).value} */}
 						</div>
         			</span>	
-	        		<div className="ims-bg-faded opaci-chov--50 bord-r-r-8 flex-center px-1 tx-lgx "
+	        		<div className="duno-bg-faded opaci-chov--50 bord-r-r-8 flex-center px-1 tx-lgx "
 	        			onClick={()=>{toggleAFilter(configKey)}}
         			>
         				<BsX />

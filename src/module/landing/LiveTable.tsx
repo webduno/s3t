@@ -23,7 +23,7 @@ function Component ({}) {
                     <InputText placeholder="John" updateNewData={updateNewData} />
                 </div>
                 <div>
-                    <button className="ims-bg-primary tx-mdl tx-white bord-r-8 opaci-chov--50 px-6 py-1"
+                    <button className="duno-bg-primary tx-mdl tx-white bord-r-8 opaci-chov--50 px-6 py-1"
                         onClick={addItem}
                     >
                         Add

@@ -58,15 +58,15 @@ function Component({ session, children, }: { session: any, children: React.React
             <div>
               <AlertContainer {...{ s__msg: (val:any)=>(alertMap__do.set("neutral", val)), msg:alertMap.get("neutral")}} />
               <AlertContainer {...{ s__msg: (val:any)=>(alertMap__do.set("success", val)), msg:alertMap.get("success")}}
-                  badgeClass="ims-badge-success"
+                  badgeClass="duno-badge-success"
               />
               <AlertContainer {...{
                   s__msg: (val:any)=>(alertMap__do.set("warn", val)), msg:alertMap.get("warn")}}
-                  badgeClass="ims-badge-secondary" 
+                  badgeClass="duno-badge-secondary" 
               />
               <AlertContainer {...{
                   s__msg: (val:any)=>(alertMap__do.set("error", val)), msg:alertMap.get("error")}}
-                  badgeClass="ims-badge-error" 
+                  badgeClass="duno-badge-error" 
               />
             </div>
           </InventoryProvider>

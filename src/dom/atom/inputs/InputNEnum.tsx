@@ -105,8 +105,8 @@ export const InputNEnum = ({
             {!extraDimensionToggler && 
                 <div onClick={()=>{handleDimensionToggler(!extraDimensionToggler)}}
                     className={
-                        " pa-1 px-3 ims-tx-primary ims-border-fade border-lgrey  tx-lgx ml-2 bord-r-8 "+
-                        " ims-bg-faded opaci-hov--50 clickble block "
+                        " pa-1 px-3 duno-tx-primary duno-border-fade border-lgrey  tx-lgx ml-2 bord-r-8 "+
+                        " duno-bg-faded opaci-hov--50 clickble block "
                 }
                 >
                     +
@@ -115,8 +115,8 @@ export const InputNEnum = ({
             {extraDimensionToggler &&
                 <div onClick={()=>{handleDimensionToggler(!extraDimensionToggler)}}
                     className={
-                        " pa-1 px-3 ims-tx-primary ims-border-fade border-lgrey "+
-                        " tx-lgx ml-2 bord-r-8 ims-bg-faded opaci-hov--50 clickble block "
+                        " pa-1 px-3 duno-tx-primary duno-border-fade border-lgrey "+
+                        " tx-lgx ml-2 bord-r-8 duno-bg-faded opaci-hov--50 clickble block "
                     }
                 >
                     -

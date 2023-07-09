@@ -44,26 +44,26 @@ const Component = forwardRef(({form, s__form, newItemHandler}:any, ref)=>{
     return (<>
         
         <div className='box-shadow-2 bord-r-8'>
-            <div className="ims-bg-primary tx-center bg-b-50 px-2 py-1 tx-sm  flex-align-self-start  opaci-chov--50 px-1 bord-r-t-8 tx-white flex-center"
+            <div className="duno-bg-primary tx-center bg-b-50 px-2 py-1 tx-sm  flex-align-self-start  opaci-chov--50 px-1 bord-r-t-8 tx-white flex-center"
                 onClick={()=>{addItem()}}
             >
                 Add
             </div>
             <form onSubmit={addItem}>
-                {/* <input placeholder='ID' className='ims-button-faded w-80px' value={form.id} onChange={(e:any)=>handleChange(e,"id")}  /> */}
+                {/* <input placeholder='ID' className='duno-button-faded w-80px' value={form.id} onChange={(e:any)=>handleChange(e,"id")}  /> */}
                 <input placeholder='Label' className='noborder  pa-2 w-100px ' value={form.label} onChange={(e:any)=>handleChange(e,"label")}  />
             </form> 
         </div>
         
         {/* <div>
-            <div className="ims-bg-primary tx-center mb-1 bg-b-50 px-2 py-1 tx-sm  flex-align-self-start opaci-50 paci-hov--50 px-1 bord-r-8 tx-white flex-center "
+            <div className="duno-bg-primary tx-center mb-1 bg-b-50 px-2 py-1 tx-sm  flex-align-self-start opaci-50 paci-hov--50 px-1 bord-r-8 tx-white flex-center "
                 onClick={()=>{deleteItem()}}
             >
                 Delete
             </div>
             
             <form onSubmit={updateItem}>
-                <input placeholder='Label' className='ims-button-faded w-80px ' value={form.id} onChange={(e:any)=>handleChange(e,"label")}  />
+                <input placeholder='Label' className='duno-button-faded w-80px ' value={form.id} onChange={(e:any)=>handleChange(e,"label")}  />
             </form> 
         </div> */}
 

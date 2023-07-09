@@ -20,8 +20,8 @@ export const ErrorBlock = ({err=null}:any)=>{
             </div>}
 
             <Image src='/icons/svg/404-error.svg' alt='next' width='200' height='200'/>
-            <h1 className="ims-tx-primary pt-8 ">Oops! This page could not be found.</h1>
-            <Link  href="/" className="ims-tx-link tx-bold-9 tx-lgx bord-r-8 mt-3  box-shadow-1">
+            <h1 className="duno-tx-primary pt-8 ">Oops! This page could not be found.</h1>
+            <Link  href="/" className="duno-tx-link tx-bold-9 tx-lgx bord-r-8 mt-3  box-shadow-1">
                 <div className="py-3 px-6 opaci-hov-25"> Go Home </div>
             </Link>
         </div>

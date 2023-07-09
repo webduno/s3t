@@ -62,25 +62,25 @@ export const InputDate = ({
     return (
     <div className="flex-center w-100 pos-rel" >
         <div onClick={handleCalendarClick}
-            className="pos-abs left-0 pl-3 ims-tx-lightdark clickble"
+            className="pos-abs left-0 pl-3 duno-tx-lightdark clickble"
         >
             <BsCalendar />
         </div>
         {/*WIP:for when the user wants to input date and time*/false &&
             <input  type="datetime-local" value={value}
                 /*onChange={handleDateTimeChange} onInput={handleDateTimeChange} ref={$theInput}*/
-                className="py-2 px-4 pl-8 w-100 ims-tx-dark ims-border-fade border-lgrey bord-r-5 tx-mdl"
+                className="py-2 px-4 pl-8 w-100 duno-tx-dark duno-border-fade border-lgrey bord-r-5 tx-mdl"
             />
         }
 
         <input onClick={handleCalendarClick} type="date" value={value}
             onChange={handleDateChange} onInput={handleDateChange} ref={$theInput}
             min={minDate} max={maxDate}
-            className="py-2 px-4 pl-8 w-100 ims-tx-dark ims-border-fade border-lgrey bord-r-5 tx-mdl"
+            className="py-2 px-4 pl-8 w-100 duno-tx-dark duno-border-fade border-lgrey bord-r-5 tx-mdl"
         />
         <button onClick={updateAllToNow}  className="pa-1">
-            <div className="ims-button-faded ">
-                <div className="nowrap tx-sm ims-tx-link">Set Today</div>
+            <div className="duno-button-faded ">
+                <div className="nowrap tx-sm duno-tx-link">Set Today</div>
             </div>
         </button>
     </div>

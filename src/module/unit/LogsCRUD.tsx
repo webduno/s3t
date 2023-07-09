@@ -78,8 +78,8 @@ export const LogsCRUD = ({
         <div className="bord-r-8  w-100  h-max-300px autoverflow " >
             {logs.map((aNote:any, index:any)=>{
                 return (
-                <div key={index} className="pb-5  px-2 ims-bg-faded-odd bord-r-8">
-                    <div className="flex ims-tx-primary flex-align-end">
+                <div key={index} className="pb-5  px-2 duno-bg-faded-odd bord-r-8">
+                    <div className="flex duno-tx-primary flex-align-end">
                         <div className="tx-bold-6 pb-1 pt-2">{aNote.author}</div>
                         <div className="px-1 tx-sm opaci-75 pb-1 pt-2">on</div>
                         <div className="tx-sm opaci-75 pb-1 pt-2 flex-1">{aNote.date}</div>
@@ -113,7 +113,7 @@ export const LogsCRUD = ({
             }
             <div onClick={() => !!theMessage && addNote("John Ayer")}
                 className={`
-                    px-3 py-2 flex mt-2  ims-bg-primary tx-white bord-r-8
+                    px-3 py-2 flex mt-2  duno-bg-primary tx-white bord-r-8
                     ${!!theMessage ? "opaci-hov--50" : "opaci-25"}
                     ${loadMap.get("create") || !theMessage ? " stopcursor " : " clickble "}
                 `}

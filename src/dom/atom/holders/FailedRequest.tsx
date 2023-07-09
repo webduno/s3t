@@ -21,11 +21,11 @@ export default function Component({err=null,preview="/?offline"}:any) {
                 <div>{(!err.message && "error no message")}</div>
             </div>}
 
-            <div className="tx-  ims-tx-primary  pos-abs mb-200 pb-100 tx-bold-6 tx-lgx tx-center w-min-250px ">
+            <div className="tx-  duno-tx-primary  pos-abs mb-200 pb-100 tx-bold-6 tx-lgx tx-center w-min-250px ">
                 Couldn&apos;t connect to database.
             </div>
             <Image src='/icons/svg/request-error.svg' alt='next' width='200' height='200' className='opaci-25'/>
-            <Link href="#" onClick={()=>{window.location.reload()}} className="pos-abs mb-5  tx-lg bord-r-8  box-shadow-5 tx-lgx ims-button-primary box-shadow-1 ">
+            <Link href="#" onClick={()=>{window.location.reload()}} className="pos-abs mb-5  tx-lg bord-r-8  box-shadow-5 tx-lgx duno-button-primary box-shadow-1 ">
                 <div className="py-1"> Reload </div>
             </Link>
             {!!preview && 

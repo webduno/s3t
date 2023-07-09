@@ -19,7 +19,7 @@ export default function Component({
 
 
     return(<>
-    <div className={` flex bord-r-t-8 ${!!headerStyle?"":"border-lgrey ims-bg-lightest"} `} style={headerStyle}>
+    <div className={` flex bord-r-t-8 ${!!headerStyle?"":"border-lgrey duno-bg-lightest"} `} style={headerStyle}>
         {!displayConfigObj.key.isInvisible && <div className={`w-20 flex  py-3 px-4 tx-sm`}>
             <div className="opaci-50 "> {displayConfigObj.key.title} </div>
             <div className=" opaci-50 px-1"> <BsArrowDown /> </div>
@@ -38,7 +38,7 @@ export default function Component({
     <div className={`${!!tableStyle?"":"border-lgrey   "} `} style={tableStyle}>
         {theArray.map((item:any,index:any)=>{
             return (
-            <div key={index} className={`pos-rel ims-bg-lightest-odd ${selectedItems.indexOf(item[displayConfigObj.key.name]) != -1 ? "z-100 box-shadow-2-r tx-bold-6 " : ""}`}>
+            <div key={index} className={`pos-rel duno-bg-lightest-odd ${selectedItems.indexOf(item[displayConfigObj.key.name]) != -1 ? "z-100 box-shadow-2-r tx-bold-6 " : ""}`}>
                 {_boolConfig.includes("isSelectable") && 
                     <div className=' pos-abs  w-100 h-100 clickble  bg-b-2 paci-75   flex'>
                         <div className=' z-400 clickble  g-b-10 paci-75 opaci-chov--50  flex-1'>

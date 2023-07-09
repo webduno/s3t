@@ -19,7 +19,7 @@ export default function Component ({ itemsArray, columnLookup, filename }:any)  
   }, [itemsArray, columnLookup]);
 
   return (
-    <div className="ims-tx-link flex-center pr-3 opaci-hov-50 mr-100">
+    <div className="duno-tx-link flex-center pr-3 opaci-hov-50 mr-100">
       {/* <CSVLink data={csvData} filename={filename}>
         Export CSV
       </CSVLink> */}

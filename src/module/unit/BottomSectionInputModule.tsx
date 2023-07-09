@@ -122,7 +122,7 @@ export const BottomSectionInputModule = ({
     return (editMode && <>
     <div className="flex w-100  Q_xs_md_flex-col">
         <div className="flex flex-1 w-max-400px pt-0 ">
-            <div className="flex-1 flex-col flex-align-start w-20 tx-bold-5 tx-smd ims-tx-lightdark pr-4">
+            <div className="flex-1 flex-col flex-align-start w-20 tx-bold-5 tx-smd duno-tx-lightdark pr-4">
                 <div className={`tx-mdl`}>{label}</div>
                 {!!sublabel && <div className="tx-bold-3 tx-sm pt-1">{sublabel}</div> }
             </div>
@@ -133,9 +133,9 @@ export const BottomSectionInputModule = ({
                 const theFormat = theInputObj.customFormat
                 const theWidget = theInputObj.widget
 
-                return <div key={key+"edit"} className=" px-4 py-3 bord-r-8 ims-bg-hov-faded">
+                return <div key={key+"edit"} className=" px-4 py-3 bord-r-8 duno-bg-hov-faded">
                     {theInputObj.title && theFormat != "radio" &&
-                        <div className="pb-2 tx-bold-5 ims-tx-lightdark tx-smd">{theInputObj.title}</div>
+                        <div className="pb-2 tx-bold-5 duno-tx-lightdark tx-smd">{theInputObj.title}</div>
                     }
                     {theWidget == "color" &&
                         <div className="w-max-250px">

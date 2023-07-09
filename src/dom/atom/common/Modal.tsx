@@ -28,7 +28,7 @@ export default function Component ({
                     <BsXLg />
                 </button>
             </div>
-            {subtitle && <div className="pt-1 ims-tx-faded px-4 pb-4">
+            {subtitle && <div className="pt-1 duno-tx-faded px-4 pb-4">
                 <span className=" tx-bold-4">{subtitle}</span>
             </div>}
             <div className="px-4 pb-4 noverflow-x autoverflow-y h-max-80vh">

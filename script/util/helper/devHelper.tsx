@@ -18,7 +18,7 @@ export {isDevEnvironment};
 //     {
 //         return args.map((X)=><div>{JSON.stringify(X)}</div>)
 //     }
-//     return <div className="ims-border-fade">empty ddom</div>
+//     return <div className="duno-border-fade">empty ddom</div>
 // }
 
 

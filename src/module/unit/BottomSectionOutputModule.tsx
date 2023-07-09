@@ -50,7 +50,7 @@ export const BottomSectionOutputModule = ({
     return (!editMode && <>
     <div className="flex w-100  Q_xs_md_flex-col">
         <div className="flex flex-1 w-max-400px pt-0 ">
-            <div className="flex-1 flex-col flex-align-start w-20 tx-bold-5 tx-smd ims-tx-lightdark pr-4">
+            <div className="flex-1 flex-col flex-align-start w-20 tx-bold-5 tx-smd duno-tx-lightdark pr-4">
                 <div className={`${_useDeviceXS_LG && "tx-mdl"}`}>{label}</div>
                 {!!sublabel && <div className="tx-bold-3 tx-sm pt-1">{sublabel}</div> }
             </div>
@@ -62,7 +62,7 @@ export const BottomSectionOutputModule = ({
 
                 const theWidget = theInputObj.widget
 
-                return <div key={key} className=" px-4 py-3 bord-r-8 ims-bg-hov-faded w-min-100px">
+                return <div key={key} className=" px-4 py-3 bord-r-8 duno-bg-hov-faded w-min-100px">
                     
                     {theWidget == "select" && theFormat == "radio" && <div>
                         <div className="flex">
@@ -81,7 +81,7 @@ export const BottomSectionOutputModule = ({
                      (theWidget == "select" && theFormat != "radio") ) &&
                         <div>
                             {theInputObj.title &&
-                                <div className="pb-2 tx-bold-5 ims-tx-lightdark tx-smd">
+                                <div className="pb-2 tx-bold-5 duno-tx-lightdark tx-smd">
                                     {theInputObj.title}
                                 </div>
                             }
@@ -89,7 +89,7 @@ export const BottomSectionOutputModule = ({
                     }
                     
                     {!!theInputObj.inputName && !values[theInputObj.inputName] && (
-                        <div className={`tx-smd ims-tx-faded`}>
+                        <div className={`tx-smd duno-tx-faded`}>
                             ---
                         </div>
                     ) }
@@ -99,8 +99,8 @@ export const BottomSectionOutputModule = ({
                                 " tx-smd flex-center flex-justify-start autoverflow "+
                                 jssWSwitch(theFormat,["narrow","price","integer",""],[150,120,80,200])+
                                 (theInputObj.path
-                                    ? " ims-tx-link tx-bold-5 tx-md opaci-chov--50"
-                                    : " ims-tx-faded  "
+                                    ? " duno-tx-link tx-bold-5 tx-md opaci-chov--50"
+                                    : " duno-tx-faded  "
                                 )
                             }
                         >

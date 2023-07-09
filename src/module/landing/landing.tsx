@@ -20,7 +20,7 @@ function Component ({}) {
 
       <Link onClick={()=>{s__loading("inventory")}} href="/inventory" 
         className={`tx-xl tx-center  flex-col  noverflow bord-r-8 bg-b-hov-10 flex-1 
-          ${loading != "inventory" ? "tx-gray" : "ims-tx-primary "}
+          ${loading != "inventory" ? "tx-gray" : "duno-tx-primary "}
         `}
       >
         {loading == "inventory"

@@ -100,10 +100,10 @@ export const InputFile = ({...others })=>{
                 <span className=" w-100 py-1 flex-col flex-center">
                     <div className=" py-2 w-100 flex-between ">
                         {others.border != "dashed" &&
-                            <span className='ims-tx-dark px-4'>{others.title}</span>
+                            <span className='duno-tx-dark px-4'>{others.title}</span>
                         }
                         {/* <span className="px-1">or</span> */}
-                        <span className="tx-bold-6 ims-tx-primary px-4">Upload</span>
+                        <span className="tx-bold-6 duno-tx-primary px-4">Upload</span>
                     </div>
                     <input type="file"  ref={$theInput}
                         role="button" id="theImage"

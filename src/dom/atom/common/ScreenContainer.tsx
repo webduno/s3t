@@ -9,7 +9,7 @@ function Component({
     // msg,
     delay = 4000,
     // s__msg,
-    badgeClass="ims-badge-faded",
+    badgeClass="duno-badge-faded",
 }: any) {
 
     const app:any = useContext(AppContext)

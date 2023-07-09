@@ -21,7 +21,7 @@ function Component ({}) {
     return (
         <div>
             <div>
-                <button className="ims-button-primary"
+                <button className="duno-button-primary"
                     onClick={setLocalStorage}>
                     Set Local Storage
                 </button>

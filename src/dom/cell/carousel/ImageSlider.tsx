@@ -86,7 +86,7 @@ export const ImageSlider = ({
                     {!loadedImages.has(index) && (
                         <div
                             className={
-                                " bg-white ims-border-fade border-lgrey pos-abs "+
+                                " bg-white duno-border-fade border-lgrey pos-abs "+
                                 " w-100 h-100 flex-center opaci-50 tx-ls-5 "
                             }
                             style={{width:GW+"px"}}

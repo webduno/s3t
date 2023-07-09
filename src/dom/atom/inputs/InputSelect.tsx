@@ -114,7 +114,7 @@ export const InputSelect = ({
     <div className="pos-rel  w-100" ref={$domContainer}>
         <input type="text" defaultValue={theId} hidden />
 
-        <div className={"flex  w-100  ims-tx-dark ims-border-fade border-lgrey bord-r-8"}>
+        <div className={"flex  w-100  duno-tx-dark duno-border-fade border-lgrey bord-r-8"}>
 
             <input ref={$displayInput} value={displayValue}
                 onClick={() => s__isOpen(true)} onChange={handleChange} 
@@ -134,7 +134,7 @@ export const InputSelect = ({
         </div>
 
         {isOpen &&
-            <div className={`_ddr ims-border-fade border-lgrey-shadow tx-mdl w-100 ${CSS["select_dropdown"]}`+(isOpen ? "" : "")} 
+            <div className={`_ddr duno-border-fade border-lgrey-shadow tx-mdl w-100 ${CSS["select_dropdown"]}`+(isOpen ? "" : "")} 
                 style={{transform:"translateY(99%)", maxHeight: "320px", overflowY: "auto",}}
             >
                 {(FILTERED_optMap.size == 0 || optMap.size == 0) && <>
@@ -143,7 +143,7 @@ export const InputSelect = ({
                     </div>
                 </>}
                 {Array.from(FILTERED_optMap.entries()).map(([key, optField]:any,index)=>(
-                    <div key={index} className="ims-bg-hov-faded clickble "
+                    <div key={index} className="duno-bg-hov-faded clickble "
                         onClick={()=>{setNewSelection(optField)}}
                     >
                         <div className="pa-3">
@@ -156,7 +156,7 @@ export const InputSelect = ({
                         {/*WIP:for when the user wants to add a new option on the fly*/}
                         <hr />
                         <div onClick={()=>{ __toggle_addNewMode() }}
-                            className="opaci-chov--50 flex-center tx-bold-5 ims-tx-primary "
+                            className="opaci-chov--50 flex-center tx-bold-5 duno-tx-primary "
                         >
                             {!addNewMode
                                 ? <>

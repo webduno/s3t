@@ -124,7 +124,7 @@ export const UnitPageComponent = ({
   return(<>        
     <div className="flex-between Q_xs_md_flex-col">
       <div className="flex-col pt-3  ">
-        <h1 className="tx-bold-5 ims-tx-dark flex ">
+        <h1 className="tx-bold-5 duno-tx-dark flex ">
           {`${editMode ? 'Edit' : 'Details'} - Trailer`}
         </h1>
       </div>

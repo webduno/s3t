@@ -2,7 +2,7 @@ import { forwardRef, ReactNode, useContext, useImperativeHandle, useRef, useStat
 import { useOnClickOutside } from 'usehooks-ts';
 
 
-const Component = forwardRef(( {buttonTitle, buttonClass = "ims-button-primary", children}:{
+const Component = forwardRef(( {buttonTitle, buttonClass = "duno-button-primary", children}:{
     buttonTitle: string, buttonClass?: string,
     children?: JSX.Element|JSX.Element[];
 }, ref )=>{

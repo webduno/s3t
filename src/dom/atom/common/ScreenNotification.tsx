@@ -1,7 +1,7 @@
 import { useState } from "react"
 
 export function ScreenNotification ({
-    onHide=()=>{}, delay=4000, badgeClass="ims-badge-faded", alertMsg="",s__msg,
+    onHide=()=>{}, delay=4000, badgeClass="duno-badge-faded", alertMsg="",s__msg,
 }: any) {
     const [visible, setVisible] = useState(true)
 

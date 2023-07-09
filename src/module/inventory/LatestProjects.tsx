@@ -15,14 +15,14 @@ function Component ({initArray}:any) {
         return (<>
           <Dropdown buttonTitle={buttonActionText} buttonClass={buttonActionClass}>
             <div className="flex-col flex-align-stretch gap-1 bg-white pa-2 bord-r-8 z-100  ">
-              <Link  href={`unit/${id}`} className="ims-button-primary clickble nowrap"
+              <Link  href={`unit/${id}`} className="duno-button-primary clickble nowrap"
                 onClick={()=>{}}
               >
                 View Details
               </Link>
               {!!foundIndex && <>
                 {!!initArray[foundIndex-1].url &&<>
-                    <Link  href={initArray[foundIndex-1].url || ""} className="ims-button-faded clickble nowrap"
+                    <Link  href={initArray[foundIndex-1].url || ""} className="duno-button-faded clickble nowrap"
                         target="_blank"
                         // onClick={()=>{s__loading(id)}}
                     >

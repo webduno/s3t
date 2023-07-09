@@ -62,7 +62,7 @@ function Component ({ initialArray, q_foreigns }:any) {
     return (<>
       <Dropdown buttonTitle={buttonActionText} buttonClass={buttonActionClass}>
         <div className="flex-col flex-align-stretch gap-1 bg-white pa-2 bord-r-8">
-          <Link  href={`agreement/${id}`} className="ims-button-primary clickble nowrap"
+          <Link  href={`agreement/${id}`} className="duno-button-primary clickble nowrap"
             onClick={()=>{s__loading(id)}}
           >
             {id == loading && <div className="spin-1 px-1">-</div>} View Details

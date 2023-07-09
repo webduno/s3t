@@ -1,4 +1,4 @@
-import '@/../style/ims-theme.css'
+import '@/../style/duno-theme.css'
 import '@/../style/reset.css'
 import '@/../style/css.css'
 import { fetchSession } from '../../script/state/repository/session'

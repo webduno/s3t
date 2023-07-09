@@ -17,15 +17,15 @@ export const FileJustUploaded = ({
             <div className="flex-1 flex-col flex-align-start noverflow ">
                 <Link href={percentComplete < 100 ? "#" :  `${STATIC_DOC_BASE}${foundFilename}`}
                     target={percentComplete < 100 ? "" : "_blank"} rel="noreferrer"
-                    className="ims-tx-primary opaci-chov--50 underline tx-bold-5 ims-underline-primary"  
+                    className="duno-tx-primary opaci-chov--50 underline tx-bold-5 duno-underline-primary"  
                 >
                     {foundFilename}
                 </Link>
             </div>
-            <div className=" ims-tx-faded  px-2" >{date}</div>
+            <div className=" duno-tx-faded  px-2" >{date}</div>
             {(foundFilename == "loading..." )  && <div className="spin-1 " ><AiOutlineLoading /></div>}
             {(foundFilename != "loading..." )  &&
-                <div className="flex ims-tx-faded tx-lg tx-bold-5 " >
+                <div className="flex duno-tx-faded tx-lg tx-bold-5 " >
                     <div className="px-1 opaci-chov--50" onClick={()=>{handleDelete(cat,{id:fileId})}}>
                         <BsTrash />
                     </div>
@@ -43,7 +43,7 @@ export const FileJustUploaded = ({
         {!(foundFilename != "loading..." || percentComplete == 100) && 
             <div className="flex-center" > 
                 <div className="flex-1  bg-b-20 bord-r-25">
-                    <div className="ims-bg-primary bord-r-25 py-1"
+                    <div className="duno-bg-primary bord-r-25 py-1"
                         style={{width:parseInt(`${percentComplete}`)+"%"}}
                     >
                     </div>

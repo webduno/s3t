@@ -48,7 +48,6 @@ function Page ({}) {
     const updateClientToLocalstorage = () => { s__LS_crud(JSON.stringify({...JSON.parse(LS_crud),...crud})) }
     const theJsonArray = JSON.parse(LS_crud)[keyName]
     const hardCodedMemo:any = useMemo(()=>{
-        console.log("keyName in hardCoded1", keyName in hardCoded1)
         return keyName in hardCoded1 ? hardCoded1 : {...hardCoded1,...{[keyName]:{
             baseUrl: '/api/settings',
             apiUrl: "",

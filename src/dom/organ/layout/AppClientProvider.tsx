@@ -6,7 +6,6 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 
 
 import { DEFAULT_ALERT_MAPARRAY, INSTITUTION } from "@/../script/constant";
-import AuthProvider from '@/../script/state/context/AuthContext'
 import { AppContext } from "@/../script/state/context/AppContext";
 import AlertContainer from '@/dom/atom/common/AlertContainer';
 import { useNavigationEvent } from '@/../script/util/hook/useNavigationEvent';
@@ -51,27 +50,25 @@ function Component({ session, children, }: { session: any, children: React.React
 
   return (
     <AppContext.Provider value={appValue}>
-      <AuthProvider {...{session}}>
-        <QueryClientProvider client={queryClient}>
-          <InventoryProvider>
-            {children}        
-            <div>
-              <AlertContainer {...{ s__msg: (val:any)=>(alertMap__do.set("neutral", val)), msg:alertMap.get("neutral")}} />
-              <AlertContainer {...{ s__msg: (val:any)=>(alertMap__do.set("success", val)), msg:alertMap.get("success")}}
-                  badgeClass="duno-badge-success"
-              />
-              <AlertContainer {...{
-                  s__msg: (val:any)=>(alertMap__do.set("warn", val)), msg:alertMap.get("warn")}}
-                  badgeClass="duno-badge-secondary" 
-              />
-              <AlertContainer {...{
-                  s__msg: (val:any)=>(alertMap__do.set("error", val)), msg:alertMap.get("error")}}
-                  badgeClass="duno-badge-error" 
-              />
-            </div>
-          </InventoryProvider>
-        </QueryClientProvider>
-      </AuthProvider>
+      <QueryClientProvider client={queryClient}>
+        <InventoryProvider>
+          {children}        
+          <div>
+            <AlertContainer {...{ s__msg: (val:any)=>(alertMap__do.set("neutral", val)), msg:alertMap.get("neutral")}} />
+            <AlertContainer {...{ s__msg: (val:any)=>(alertMap__do.set("success", val)), msg:alertMap.get("success")}}
+                badgeClass="duno-badge-success"
+            />
+            <AlertContainer {...{
+                s__msg: (val:any)=>(alertMap__do.set("warn", val)), msg:alertMap.get("warn")}}
+                badgeClass="duno-badge-secondary" 
+            />
+            <AlertContainer {...{
+                s__msg: (val:any)=>(alertMap__do.set("error", val)), msg:alertMap.get("error")}}
+                badgeClass="duno-badge-error" 
+            />
+          </div>
+        </InventoryProvider>
+      </QueryClientProvider>
     </AppContext.Provider>
   )
 }

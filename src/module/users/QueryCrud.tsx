@@ -17,10 +17,7 @@ import JSONFullCrud from '@/dom/organ/crud/JSONFullCrud'
 
 
 function Component ({ theKey }:{ theKey:string })  {
-    useEffect(()=>{
-        console.log("key use effect",theKey)
-    },[theKey])
-    console.log("key", theKey)
+    
     let theK = theKey || "inventory_statuses"
     /****** CREATE ******/
     const foreigns:any = FOREIGNS_JSON
@@ -95,7 +92,6 @@ function Component ({ theKey }:{ theKey:string })  {
 
     /****** BEHAVE ******/
     const hardCodedMemo:any = useMemo(()=>{
-        console.log("keyName in hardCoded1", keyName in hardCoded1, hardCoded1)
         return keyName in hardCoded1 ? hardCoded1 : {...hardCoded1,...{[keyName]:{
             baseUrl: '/api/crud',
             apiUrl: "",
@@ -103,7 +99,6 @@ function Component ({ theKey }:{ theKey:string })  {
     },[keyName])
     const browserArrayList = useMemo(()=>{ return crud[keyName] || [] },[crud[keyName],keyName])
     useEffect(()=>{
-        console.log("use effect key", theKey)
         if (keyName in FOREIGNS_JSON) { s__crud({[keyName]:foreigns[keyName]}) }
         app.s__sidebarLinks(
             Object.keys(foreigns).map((x,i)=>({

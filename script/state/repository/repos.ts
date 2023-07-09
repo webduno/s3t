@@ -1,7 +1,6 @@
 const personal_token = process.env.GITHUB_PERSONAL_TOKEN
 
 export const fetchRepos = async (user: string = "abrahamduno", config: any = {}): Promise<any> => {
-  console.log("personal token,", personal_token)
   try {
     const response = await fetch(`https://api.github.com/users/${user}/repos`, {
       ...config,

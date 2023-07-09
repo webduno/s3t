@@ -7,7 +7,6 @@ export const parseDecimals = (x:number) => {
   }
   if (x < 0.00001)
   {
-    // console.log("*number* TOO LOW", x)
     return x.toFixed(8)
   }
   if (x < 0.0001)
@@ -49,7 +48,6 @@ export const parseDecimals = (x:number) => {
 export async function fetchMultipleJsonArray(requestsObj:any) {
   let reqKeys =  Object.keys(requestsObj)
   let requests =  Object.keys(requestsObj).map((reqKey) => {
-    // console.log("requestsObj[reqKey][0]", requestsObj[reqKey][0])
     return fetch(requestsObj[reqKey][0])
   })
   return Promise.all(requests).then((responsesArray) => {
@@ -138,7 +136,7 @@ try {
   let awaitedRes = (await reqRes.clone().json())
   return awaitedRes
 } catch (e:any) {
-  console.log("reqRes catch (e:any)", e)
+  console.error("reqRes catch (e:any)", e)
   return null
 }
 }
@@ -148,7 +146,6 @@ export const fetchPostImage = async (url:any,file:any,config:any)=>{
   return new Promise(async (resolve, reject) => {
       try {
           const payload = new FormData();
-          console.log("config", config)
           payload.append(config.fieldName || "img", file, file.name);
 
           const req = new XMLHttpRequest();
@@ -165,7 +162,7 @@ export const fetchPostImage = async (url:any,file:any,config:any)=>{
   })
 }
 export function returnError(_a:any,err:any,theUrl:any,returnNull = false) {
-  console.log("error fetching: "+theUrl,err)
+  console.error("error fetching: "+theUrl,err)
   return returnNull ? null : _a
 }
 export async function fetchJsonArray(theUrl:any, propName = "", returnNull = false) {
@@ -180,7 +177,7 @@ export async function fetchJsonArray(theUrl:any, propName = "", returnNull = fal
       if (propName != "" && !(propName in theJsonResult)) { return returnError([],{},theUrl,returnNull) }
       return theParsedResult
   } catch (err) {
-      console.log("returnNull?????????")
+      console.error("returnNull?????????")
       return returnNull ? null : returnError([],err,theUrl,returnNull)
   }
 }

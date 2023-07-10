@@ -3,7 +3,7 @@ import FlexTable from "@/dom/cell/form/FlexTable"
 async function TechStackTable ({ initArray }:any) {
     return (
         <div>
-            <FlexTable theArray={initArray}
+            <FlexTable theArray={initArray} bools={["isIdless"]}
                 config={{idKey:"id",mainKey:"id",
                     childrenArray: [
                         { key: "title", title: "Title"},

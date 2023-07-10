@@ -48,7 +48,7 @@ function Component ({initArray}:any) {
                     headerClass:"tx-sm tx-gray tx-bold-3 ",
                     childrenArray: [
                         // { key: "name", title: "Name"},
-                        { key: "category", title: "Category", class:""},
+                        { key: "category", title: "Category", class:"Q_sm_x"},
                         { key: "title", title: "Title"},
                         { key: "desc", title: "Description"},
                     ]

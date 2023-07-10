@@ -36,8 +36,8 @@ async function Component ({ initArray }:any) {
                 config={{idKey:"slug",mainKey:"slug",idKeyTitle:"Slug",
                     childrenArray: [
                         { key: "title", title: "Title"},
-                        { key: "desc", title: "Description"},
-                        { key: "status", title: "Status"},
+                        { key: "desc", title: "Description", class:"Q_sm_x"},
+                        { key: "status", title: "Status", class:"Q_sm_x"},
                     ]
                 }}
             />

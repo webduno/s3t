@@ -2,6 +2,8 @@ import '@/../style/duno-theme.css'
 import '@/../style/reset.css'
 import '@/../style/css.css'
 import AppClientProvider from "@/dom/organ/layout/AppClientProvider"
+import { Suspense } from 'react'
+import { Analytics } from '@vercel/analytics/react';
 
 export const metadata = {
   title: 'Abraham Duno',
@@ -22,6 +24,9 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         <AppClientProvider>
           <> {children}  </>
         </AppClientProvider>
+        <Suspense>
+          <Analytics />
+      </Suspense>
       </body>
     </html>
   )

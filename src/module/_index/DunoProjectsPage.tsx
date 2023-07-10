@@ -107,7 +107,6 @@ export default async function DunoProjectsPage() {
               </summary>
               <div>
                 <hr className='mb-4' />
-                {/* @ts-expect-error */}
                 <div> <TechStackTable initArray={theStandardsArray} /> </div>
                 <br className='my-8 ' />
               </div>

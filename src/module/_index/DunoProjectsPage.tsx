@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import TechStackTable from './TechStackTable';
-import ContextConnectedTable from '../inventory/ContextConnectedTable';
+import { ContextConnectedTable } from '../inventory/ContextConnectedTable';
 import { getSupabaseClient } from '../../../script/state/repository/supabaseClient';
 import { fetchDemoList } from '../../../script/state/repository/demo';
 import LatestProjects from '../inventory/LatestProjects';

@@ -1,9 +1,8 @@
-"use client"
 import Dropdown from "@/dom/atom/common/Dropdown"
 import FlexTable from "@/dom/cell/form/FlexTable"
 import Link from "next/link"
 
-export function ContextConnectedTable ({ initArray }:any) {
+export const ContextConnectedTable = ({ initArray }:any) => {
     const buttonActionText = "..."
     const buttonActionClass = "tx-lg pb-3 pt-1 px-2 tx-gray opaci-chov--25"
     const actionCard = (slug:any) => {
@@ -17,7 +16,6 @@ export function ContextConnectedTable ({ initArray }:any) {
                     {!!initArray[foundIndex-1].url &&<>
                       <Link  href={initArray[foundIndex-1].url || ""}
                         className="duno-button-primary clickble nowrap"
-                        onClick={()=>{}}
                       >
                         Go to URL
                       </Link>

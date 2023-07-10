@@ -1,3 +1,4 @@
+"use client"
 import { forwardRef, ReactNode, useContext, useImperativeHandle, useRef, useState,  } from 'react'
 import { useOnClickOutside } from 'usehooks-ts';
 

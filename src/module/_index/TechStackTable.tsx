@@ -1,6 +1,6 @@
 import FlexTable from "@/dom/cell/form/FlexTable"
 
-export const TechStackTable = ({ initArray }:any) => {
+export function TechStackTable ({ initArray }:any) {
     return (
         <div>
             <FlexTable theArray={initArray} bools={["isIdless"]}

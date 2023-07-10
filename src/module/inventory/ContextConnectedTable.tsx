@@ -3,7 +3,7 @@ import Dropdown from "@/dom/atom/common/Dropdown"
 import FlexTable from "@/dom/cell/form/FlexTable"
 import Link from "next/link"
 
-async function Component ({ initArray }:any) {
+export function ContextConnectedTable ({ initArray }:any) {
     const buttonActionText = "..."
     const buttonActionClass = "tx-lg pb-3 pt-1 px-2 tx-gray opaci-chov--25"
     const actionCard = (slug:any) => {
@@ -45,4 +45,4 @@ async function Component ({ initArray }:any) {
     )
 }
 
-export default Component
+export default ContextConnectedTable

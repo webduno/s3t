@@ -60,7 +60,6 @@ export default async function DunoProjectsPage() {
               <div>
                 <hr className='mb-4' />
                 <div className='flex-col flex-align-stretch'>
-                  {/* @ts-expect-error */}
                   <ContextConnectedTable initArray={theCodeArray} />
                 </div>
                 <br className='my-8 ' />
@@ -76,7 +75,6 @@ export default async function DunoProjectsPage() {
               </summary>
               <div>
                 <hr className='mb-4' />
-                {/* @ts-expect-error */}
                 <ContextConnectedTable initArray={theArtArray} />
                 <br className='my-8 ' />
               </div>
@@ -91,7 +89,6 @@ export default async function DunoProjectsPage() {
               </summary>
               <div>
                 <hr className='mb-4' />
-                {/* @ts-expect-error */}
                 <ContextConnectedTable initArray={theGameArray} />
                 <br className='my-8 ' />
               </div>

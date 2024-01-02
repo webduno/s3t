@@ -11,7 +11,7 @@ function Component({ personal_token }:any) {
     const [theArray, s__theArray] = useState()
     useEffect(() => {
         async function getForeigns() {
-          const q__foreigns = await fetchRepos("abrahamduno",{
+          const q__foreigns = await fetchRepos("3dunoabraham",{
             headers: {Authorization: `Token ${personal_token}`,}
         })
           s__theArray(q__foreigns)

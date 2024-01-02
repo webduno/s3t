@@ -1,10 +1,10 @@
-import Image from 'next/image';
 import TechStackTable from './TechStackTable';
 import { ContextConnectedTable } from '../inventory/ContextConnectedTable';
 import { getSupabaseClient } from '../../../script/state/repository/supabaseClient';
 import { fetchDemoList } from '../../../script/state/repository/demo';
 import LatestProjects from '../inventory/LatestProjects';
 import { PortfolioHtmlOptions } from './PortItems';
+import { PortfolioItems } from './PortfolioItems';
 
 export default async function DunoProjectsPage() {
   const supabaseC = getSupabaseClient()
@@ -20,16 +20,8 @@ export default async function DunoProjectsPage() {
     <main className='flex-col pos-rel  ' >
       <div className=' pos-rel w-100 '>
         <div className='flex pos-rel flex-wrap gap-1 pa-1'>
-          {PortfolioHtmlOptions.map((option: any, index: number) =>
-            {
-              const { href, className, target, alt, src, width, height, additionalClassName } = option;
-              return (
-                <a href={`${href}`} className={`${className} ${additionalClassName}`} target={`${target}`} key={index}>
-                  <Image alt={`${alt}`} src={`${src}`} width={parseInt(`${width}`)}
-                    height={parseInt(`${height}`)} /> </a>
-              );
-            }
-          )}
+        <PortfolioItems items={PortfolioHtmlOptions} />
+
         </div>
         <div className=' flex   '>
           <div className='flex-1 flex-col  flex-1 flex-align-star flex-align-stretch px-8 Q_xs_px-2 pt- '>

@@ -2,7 +2,7 @@ import FlexTable from "@/dom/cell/form/FlexTable"
 import { fetchRepos } from "../../../script/state/repository/repos"
 
 async function Component ({}) {
-    const theArray = await fetchRepos("abrahamduno", {cache: "no-store"})
+    const theArray = await fetchRepos("3dunoabraham", {cache: "no-store"})
 
     return (
         <div>

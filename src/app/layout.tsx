@@ -25,7 +25,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
           <> {children}  </>
         </AppClientProvider>
         <Suspense>
-          <Analytics />
+          {process.env.NODE_ENV === 'production' && <Analytics />}
       </Suspense>
       </body>
     </html>

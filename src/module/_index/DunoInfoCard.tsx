@@ -9,7 +9,7 @@ function DunoInfoCard({ }) {
     </a>
     <div className='flex-wrap gap-1 flex-justify-start tx-smd opaci-50 px-6'>
       <div className="w- pt-8 pb-4">
-        General Artist & Software Developer with 6+ years of experience in
+        General Artist & Software Developer with 7+ years of experience in
         full stack software development and 3d modeling & sculpting.
       </div>
     </div>

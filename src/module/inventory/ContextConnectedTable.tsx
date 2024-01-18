@@ -30,8 +30,10 @@ export const ContextConnectedTable = ({ initArray }:any) => {
           
     return (
         <div>
-            <FlexTable theArray={initArray} bools={["isActionable"]} actionCard={actionCard}
+            <FlexTable theArray={initArray} bools={["isActionable",]} actionCard={actionCard}
                 config={{idKey:"slug",mainKey:"slug",idKeyTitle:"Slug",
+                headerClass:"py-1",
+
                     childrenArray: [
                         { key: "title", title: "Title"},
                         { key: "desc", title: "Description", class:"Q_sm_x"},

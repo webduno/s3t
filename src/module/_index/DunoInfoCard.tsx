@@ -45,6 +45,14 @@ function DunoInfoCard({ }) {
           dunoabraham
       </a>
     </div>
+    <div className='flex-wrap gap-1 flex-justify-start tx-smd opaci-50'>
+      <div className="w-max-200px py-2"> CV: </div>
+      <a className="tx-bold opaci-chov--50" style={{ color: "#ff0000" }}
+        href="/cv.pdf" target="_blank"
+        >
+          cv.pdf
+      </a>
+    </div>
   </>)
 }
 

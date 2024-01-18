@@ -33,10 +33,10 @@ function Component({ theArray, bools, config, actionCard, actionHeader, calls }:
       </div>
       {!!theArray && !!theArray.map && theArray.map((anObj: any) => (
         <div key={anObj[config?.idKey || "id"]}
-          className=' w-100  block  border-lgrey-b flex pos-rel bg-b-2-odd '
+          className=' w-100  block  border-lgrey-b flex pos-rel bg-b-2-odd py-2'
         >
           {!!anObj[config?.linkKey] && bools?.includes("isRowLink") &&
-            <div className="top-0 left-0 h-100 w-100 pos-abs flex">
+            <div className="top-0 left-0 h-100 w-100 pos-abs flex ">
               <a href={"https://" + anObj[config?.linkKey]} target="_blank" rel="noopener noreferrer"
 
                 className='opaci-chov-75 z-10  block   border-lgrey-b flex bg-b-40  opaci-10 flex-1'

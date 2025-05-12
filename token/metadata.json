@@ -1,0 +1,6 @@
+{
+    "name": "Newest Coin Token",
+    "symbol": "NEWCOIN",
+    "description": "NEWCOIN is a token program on the Solana blockchain, defining a common implementation for fungible tokens",
+    "image": "https://duno.vercel.app/token/image-256x256.png"
+  }
